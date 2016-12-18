@@ -1,0 +1,1461 @@
+body,div,p,h1,h2,h3,h4,h5,ol,ul,li,dl,dt,dd,table,th,td,input{margin:0;padding:0;}
+body{font-family:Tahoma,"\5FAE\8F6F\96C5\9ED1",Arial,sans-serif;font-size:14px;color:#333;}
+a{text-decoration:none;color:#0088cc;font-size:12px;}
+li{list-style:none;}
+i,em,dfn{font-style:normal;}
+b{font-weight:bold;}
+table{border-collapse:collapse;border-spacing:0;}
+dfn{font-family:Arial;}
+img{vertical-align:bottom;}
+.t_grey{color:#999;}
+input{background:#fff;border:1px solid #CCC;font-size:14px;color:#000;padding:0 0 0 6px;height:28px;line-height:29px;font-family:inherit;vertical-align:middle;}
+input::-webkit-input-placeholder{color:#ccc; font-size: 12px;}
+select{font-family:inherit;color:#000;-webkit-appearance:none;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAGCAYAAAAlvnXZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDU2NjU2NEIzRkMzMTFFNEFBNEVGODVGQUVDRUEyRDUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDU2NjU2NEMzRkMzMTFFNEFBNEVGODVGQUVDRUEyRDUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpENTY2NTY0OTNGQzMxMUU0QUE0RUY4NUZBRUNFQTJENSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpENTY2NTY0QTNGQzMxMUU0QUE0RUY4NUZBRUNFQTJENSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtrgpywAAABDSURBVHjalM3BDQAgCANAYFh2YlqM+iGkAvbdXtnMnG6Y3jkdVYUdCWOvgOpEUsF/gYggaARkBEEtgJA4HAE7S4ABABF0DAyYX3jBAAAAAElFTkSuQmCC");background-repeat:no-repeat;background-position:right center}
+.ml5{margin-left:5px;}
+.cardinfo_list:before,.cardinfo_list:after,.bank_items:before,.bank_items:after,.clearfix:before,.clearfix:after{content:"";display:table;}
+.cardinfo_list:after,.bank_items:after,.clearfix:after{clear:both;overflow:hidden;}
+.cardinfo_list,.bank_items,.clearfix{zoom:1;}
+.cardinfo_list{font-size:0;}
+.cardinfo_list li{display:inline-block;font-size:14px;}
+.cardinfo_list li{*display:inline;*zoom:1;}
+.bank_items li{float:left;_display:inline;}
+.btn_sub{display:inline-block;width:159px;line-height:40px;text-align:center;background:#f57403;color:#fff;font-size:14px;}
+.btn_sub:hover{background:#e35b00;}
+.btn_sub.dis{background:#ccc;cursor:default;}
+.confirm:hover{background:#e35b00;}
+.stick{z-index:999;}
+.bank_items li{width:205px;height:48px;border:1px solid #dbdbdb;cursor:pointer;margin:0 0 20px 30px;position:relative;font-size:12px;*zoom:1;}
+.bank_items li.act{width:203px;height:46px;border:2px solid #f57403;}
+.bank_items li .hint{position:absolute;background:#ffd1d1;font-size:11px;padding:0 6px;top:-17px;left:-1px;height: 16px; max-width: 194px;line-height: 16px; overflow: hidden;}
+.bank_items li .hint2{position:absolute;color:#999;line-height:28px;bottom:-28px;left:-1px;}
+.bank_items li .warning{position:absolute;width:30px;height:30px;background:url(../img/warning.png);top:-1px;right:-1px;z-index:2;margin:0;}
+.bank_items li .mask{position:absolute;height:100%;width:100%;left:-1px;top:-1px;background:rgba(0,0,0,0.1);background:url(../img/mask01.png)\9;z-index:4;border:1px solid transparent;}
+.bank_items_more { display: block; line-height: 48px; text-align: left; padding-left: 15px; font-size: 18px; color: #b7b7b7;}
+.bank_items_more span { display: inline-block; width: 24px; height: 24px; background: url(../img/list_style_01.png) -3px -52px no-repeat; overflow: hidden; vertical-align: middle; margin-left: 15px;}
+/* .bank_items li:hover .mask,.bank_items li.dis .mask{background:rgba(0,0,0,0.6);background:url(../img/mask06.png)\9;}
+*/
+.bank_items li .hint3{width:185px;color:#666;font-size:12px;position:absolute;z-index:6;left:-1px;bottom:115%;background:#fffcf1;border:1px solid #f2d468;padding:5px 10px;text-align:left;display:none;}
+.bank_items li .hint3:before{content:"";width:0;height:0;font-size:0;position:absolute;border:4px solid transparent;border-top-color:#f2d468;bottom:-9px;right:11px;}
+.bank_items li .hint3:after{content:"";width:0;height:0;font-size:0;position:absolute;border:4px solid transparent;border-top-color:#fffcf1;bottom:-7px;right:11px;}
+.bank_items li:hover .hint3,.bank_items li.dis .hint3{display:block;}
+.bank_items li i{display:inline-block;width:158px;height:34px;background-color:#fff;margin:7px 0 0 10px;}
+.bank_items li.act i{margin:6px 0 0 8px;}
+.bank_items li.act .warning{margin:0;top:-2px;right:-2px;}
+/** topbar **/
+.topbar{width:100%;height:69px;border-bottom:1px solid #dedede;background:url(../img/tpbg.png) repeat-x;}
+.topbar .inn{width:980px;height:69px;margin:0 auto;position:relative;*zoom:1;overflow:hidden;}
+.topbar .logo{width:126px;height:43px;overflow:hidden;margin-top:14px;}
+.topbar .logo a{display:block;width:126px;height:43px;text-indent:-999em;background:url(../img/c_logo2013.png);}
+.topbar .logo.cruises{width:148px;}
+.topbar .logo.cruises a{width:148px;height:40px;background:url(../img/logo_cruises.png);}
+.topbar .advice,.topbar .guarantee{position:absolute;font-size:12px;color:#0088cc;font-family:simsun;right:0;top:32px;}
+.topbar .guarantee{color:#004695;font-family:Tahoma,"\5FAE\8F6F\96C5\9ED1",Arial,sans-serif;}
+/** wrapper **/
+.wrapper{width:980px;margin:10px auto 0;}
+.order_infos{background:#e4f3fb;padding:18px 0 12px 30px;position:relative;*zoom:1;}
+.order_infos .tip{background:#fff;line-height:34px;border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;padding-left:10px;font-size:12px;margin:-6px 30px 20px 0;color:#666;}
+.order_infos .tip i{color:#ff0000;}
+.order_briefs{font-weight:bold;margin-bottom:4px;margin-top:4px; padding-right: 100px;}
+.briefs_item{display:inline-block;}
+.briefs_item.price{width:258px;margin-top:-10px;color:#424242}
+.briefs_item.title{vertical-align:top;max-width:585px; _width: 585px;}
+.briefs_item.title em{font-weight:normal;display:block;margin-top:5px;}
+.briefs_item .price_aera,.mo .price_aera{color:#ff6600;}
+/*.briefs_item .price_aera{margin-left:10px;*margin-left:2px;vertical-align:-1px;}*/
+.briefs_item .price_info{display:block;font-size:12px;color:#999;font-weight:normal;margin-left:78px;}
+.briefs_item.title .paylist{font-size:12px;margin-top:4px;}
+.briefs_item dfn,.mo dfn{margin:0 3px 0 4px;}
+.briefs_item .num_b,.mo .num_b{font-size:24px;}
+.briefs_item .num_s,.mo .num_s{font-size:18px;}
+.briefs_item .order_price{font-size:12px;font-weight:normal;margin-left:-3px;margin-top:4px;display:block;}
+.briefs_item .order_price em{font-weight:bold;margin-left:6px;}
+.briefs_item .order_price em i{font-size:14px;}
+.order_detail{-webkit-transition:height 0.4s ease-in;-ms-transition:height 0.4s ease-in;-moz-transition:height 0.4s ease-in;transition:height 0.4s ease-in;}
+.detail_list{line-height:1.2;margin-top:15px;color:#333;}
+.detail_list .list_item{display:inline-block;*display:inline;*zoom:1;vertical-align:top;}
+.detail_list dt{color:#999;width:72px;float:left;}
+.detail_list dd{padding-left:72px;padding-bottom:8px;}
+.detail_list dd .ti{display:inline-block;width:110px;}
+.detail_list dd .ti.minus{width:96px;}
+.detail_list dd em{display:block;color:#999;padding-top:2px;}
+.hotel_tip{padding:0 30px;background:#eef7fc;}
+.hotel_tip .tip_info{font-size:12px;color:#666;line-height:16px;padding:20px 0;}
+.hotel_tip .tip_info dt{font-size:14px;color:#333;line-height:1.4;}
+.order_infos .flex_btn{position:absolute;right:10px;bottom:12px;margin:0 auto;width:90px;*zoom:1;text-align:center;}
+.icon_arrow_down{display:inline-block;width:0;height:0;line-height:0;font-size:0;*zoom:1;border:5px solid transparent;border-top-color:#0088cc;position:relative;right:-4px;top:4px;_display:none;}
+.icon_arrow_down::after{content:"";width:0;height:0;font-size:0;border:4px solid transparent;border-top-color:#e4f3fb;position:absolute;top:-5px;left:-4px;}
+.icon_arrow_up{display:inline-block;width:0;height:0;font-size:0;border:5px solid transparent;border-bottom-color:#0088cc;position:relative;right:-5px;top:-2px;_display:none;}
+.icon_arrow_up::after{content:"";width:0;height:0;font-size:0;border:4px solid transparent;border-bottom-color:#e4f3fb;position:absolute;top:-3px;left:-4px;}
+.order_pay{line-height:26px;margin:0 0 14px 0;border-bottom:1px solid #cedae2;padding-bottom:10px;width: 330px;}
+.order_pay dt{line-height:30px;font-weight:bold;}
+.order_pay dt dfn{font-weight:normal;}
+.order_pay dd{color:#9AA49A;}
+.order_pay dd em,.order_pay dt em{display:inline-block;width:70px;*width:75px;text-align:right;margin-right:7px;}
+.order_pay dfn{font-size:12px;margin-right:2px;}
+.order_pay .sum{margin-left:12px;}
+.order_pay .minus{margin-left:-13px;width:13px;display:inline-block;text-align: center;}
+/** giftcard model **/
+.mo{width:918px;border:1px solid #e1e1e1; border-bottom:none; *border-bottom:1px solid #B1D0FF; padding:18px 30px 43px 30px;margin-bottom:-22px;}
+.mo .inn{width:100%;padding-bottom:14px;}
+.mo .inn li{line-height:46px;color:#999;}
+.mo .inn .icon{display:inline-block;width:22px;height:22px;background:url(../img/icon_mo.png) no-repeat 0 0;vertical-align:-4px;margin-right:10px;}
+.mo .inn .icon_gift{background-position:0 0;}
+.mo .inn .icon_m{background-position:0 -22px;}
+.mo .notice{padding:12px 14px;background:#fffcf1;border:1px solid #faedbf;font-size:12px;color:#666;line-height:1.4;margin:0 0 20px;}
+.mo .notice dt{font-weight:bold;line-height:1.5;}
+.mo .inn span{display:inline-block;}
+.mo .ti{width:82px;font-size:16px;font-weight:bold;color:#333;}
+.mo .notused{width:108px; padding-right: 30px; text-align: right;}
+.mo .used{display:inline-block;width:160px;color:#333;}
+.mo .used .price{color:#ff6600;font-weight:bold;}
+.mo .used .price dfn{font-weight:normal;margin:0 2px 0 6px;}
+.mo .btn_sub{width:66px;line-height:24px;}
+.mo .btn_sub.dis{background-color:#ccc;}
+.mo .popup .ti{width:auto;font-weight:normal;color:#666;}
+.mo b{font-size:16px;}
+.mo .pay_price{line-height:72px;border-top:1px solid #e1e1e1;}
+.pay_price em{font-size:14px;color:#999;font-weight:normal;}
+.mo .used_ctl{margin-right:16px;}
+.mo .tip{font-size:12px;color:#666;background:#fffcf1;border:1px solid #faedbf;line-height:34px;margin-top:-8px;}
+.mo .popup .pop_form_list2 .tip,.mo .table_md .tip{background:none;border:none;margin-top:0;line-height:normal;}
+.mo .tip i{display:inline-block;width:16px;height:16px;background:url(../img/tips.png);vertical-align:middle;line-height:0;margin:-2px 8px 0 9px;}
+.repay_tip{line-height:60px;margin-bottom:-22px;border:1px solid #e1e1e1;padding-left:29px; padding-bottom: 60px;}
+.repay_tip .price{color:#ff6600;font-size:18px;font-weight:bold;margin:0 4px;}
+.repay_tip .price dfn{font-size:14px;}
+/** cards tabs **/
+.tabs{margin:20px 0 -20px 0;}
+.tabs table{width:100%;text-align:center;background:#f8f8f8;color:#333;font-size:16px;table-layout:fixed;position:relative;z-index:3;}
+.tabs td{height:48px;cursor:pointer;border:1px solid #e1e1e1;border-bottom:2px solid #bedded;position:relative;}
+.tabs td.act{background:#fff;border:2px solid #bedded;border-bottom:2px solid #fff;color:#0088cc;}
+.tabs td .sales{position:absolute;background:#fe9d10;font-size:12px;color:#fff;padding:2px 4px;right:10px;top:-12px;}
+.tabs td .sales:after{content:"";position:absolute;line-height:0;width:0;height:0;font-size:0;border:3px solid transparent;border-top-color:#fe9d10;left:4px;bottom:-6px;}
+.tabs2{margin-top:20px;}
+.tabs2 table{table-layout:automatic;width:auto;}
+.tabs2 table td{width:166px;}
+.tab_aera{border:2px solid #bedded;padding:10px 0 30px 0;*zoom:1;margin:-2px 0 0 0; height: auto!important; min-height: 100px; height: 100px;}
+.cardinfo_list li{width:288px;border:1px solid #dbdbdb;border-radius:6px;background:#faf9f9;position:relative;margin:20px 0 0 27px;vertical-align:top;-webkit-transition:height 0.4s ease-in;-ms-transition:height 0.4s ease-in;-moz-transition:height 0.4s ease-in;transition:height 0.4s ease-in;cursor:pointer;}
+.cardinfo_list li .ti{background:#e3ecf8;border-bottom:1px solid #c8d8ec;position:relative;*zoom:1;border-top-left-radius:6px;border-top-right-radius:6px;overflow:hidden;}
+.cardinfo_list li .ti .logo_banks{display:block;width:158px;height:34px;background-color:#e3ecf8;margin:9px 0 8px 10px;overflow:hidden;text-indent:-999em;}
+.cardinfo_list li .flag_b,.cardinfo_list li .flag_g{padding:2px 6px;color:#fff;border-radius:3px;position:absolute;top:17px;right:13px;}
+.flag_b{background:#7daecc;}
+.flag_g{background:#76c0a1;}
+.tab_aera .card_num{font-size:14px;color:#333;line-height:64px;text-align:center;font-weight:bold;}
+.tab_aera .card_num em{font-size:18px;margin-left:6px;}
+.cardinfo_list li .ti .card_num{text-align:left;line-height:1.5;margin:-10px 0 4px 16px;}
+.cardinfo_list li .warning{position:absolute;width:30px;height:30px;background:url(../img/warning.png);top:-1px;right:-1px;z-index:2;}
+.cardinfo_list li .mask{position:absolute;height:100%;width:100%;_height:126px;left:-1px;top:-1px;background:rgba(0,0,0,0.1);background:url(../img/mask01.png)\9;_background:none;border-radius:4px;z-index:4;border:1px solid transparent;}
+.cardinfo_list li:hover .mask,.cardinfo_list li.dis .mask{background:rgba(0,0,0,0.8);background:url(../img/mask06.png)\9;}
+.cardinfo_list li .hint{width:212px;color:#fff;position:absolute;z-index:6;left:40px;top:41px;display:none;}
+.cardinfo_list li:hover .hint,.cardinfo_list li.dis .hint{display:block;}
+.cardinfo_list li.active{border:2px solid #f57403;width:286px;z-index:1;}
+.cardinfo_list li.nonum.active{height:116px;}
+.cardinfo_list .card_list_item{line-height:44px;position:relative;*zoom:1;}
+.cardinfo_list .card_form,.cardinfo_list .card_form{margin:12px 0 12px 6px;}
+.cardinfo_list .selector{display:inline-block;width:107px;line-height:28px;border:1px solid #e1e1e1;border-radius:none;background:#fff;font-weight:normal;position:relative;*zoom:1;left:-1px;top:0;*border:none;}
+.cardinfo_list select{border:1px solid #e1e1e1;border-radius:none;width:70px;font-size:14px;outline:none;margin:0;padding:4px 0 5px 4px;vertical-align:middle;}
+/* .cardinfo_list .selector .icon_arrow_down{position:absolute;}
+.cardinfo_list .icon_arrow_down{border-top-color:#999;right:8px;top:14px;display:none\9;}
+.cardinfo_list .icon_arrow_down:after{border-top-color:#fff;display:none\9;}
+*/
+.cardinfo_list .or{color:#333;margin:0 10px;}
+/* .cardinfo_list input{margin:6px 0 0;}
+*/
+.card_form input{width:242px; /** margin-left:-18px; */}
+.card_form input.tel,.card_form input.tel{width:186px;display:inline;}
+.card_form .verify_code{display:block;width:254px;position:relative;margin-top:-10px;}
+.card_form .verify_code input{/** margin:1px 0 0 -18px; */}
+.card_form .verify_tip,.card_form .verify_tip2,.card_form .verify_tip3{position:absolute;width:98px;height:64px;background:#ebf7fe;border:1px solid #a2d1ea;left:275px;top:6px;z-index:20;padding:5px;}
+.card_form .verify_tip{background:url(../img/creditcard_verify1.png) no-repeat center center #ebf7fe;}
+.card_form .verify_tip2{background:url(../img/creditcard_verify2.png) no-repeat center center #ebf7fe;}
+.card_form .verify_tip3{background:url(../img/creditcard_verify3.png) no-repeat center center #ebf7fe;}
+.verify_tip::before,.verify_tip2::before,.verify_tip3::before{content:"";position:absolute;width:0;height:0;font-size:0;border:4px solid transparent;border-right-color:#a2d1ea;left:-9px;top:8px;}
+.verify_tip::after,.verify_tip2::after,.verify_tip3::after{content:"";position:absolute;width:0;height:0;font-size:0;border:4px solid transparent;border-right-color:#ebf7fe;left:-8px;top:8px;}
+.card_form input{width:166px;display:inline-block;vertical-align:middle;}
+.card_form .change_num{position:absolute;right:20px;top:0;}
+.card_form .telnum{width:122px;}
+.card_form .telcode{width:96px;}
+.card_form p,.card_form p{position:relative;zoom:1;}
+.card_form input.tel{margin:0;*margin-left:-16px;}
+.card_form .change_num{position:absolute;right:10px;top:0;}
+.card_form .btn_verify{width:70px;font-size:12px;background:#7dc7ef;color:#fff;text-align:center;display:inline-block;height:30px;line-height:30px;margin-left:-5px;cursor:pointer;}
+.card_form .btn_verify.dis{cursor:default;background:#ccc;}
+.card_form .btn-getcode{width:70px;margin-left:-5px}
+.card_form li{width:184px;background:none;border:none;line-height:40px;height:40px;margin:0;padding-left:88px;}
+.card_form li .lbs{display:inline-block;width:80px;text-align:right;margin:0 8px 0 -88px;font-size:12px;}
+.card_form li .slong{width:174px;}
+.card_form .code{width:62px;}
+.card_form .btn_verify{vertical-align:middle;}
+.overdue{line-height:32px;font-size:12px;color:#999;text-indent:20px;background:#f1faff;border-top:1px solid #e1e1e1;border-bottom-left-radius:4px;border-bottom-right-radius:4px;}
+.tab_aera .more{display:inline-block;position:relative;font-size:14px;margin:40px 0 0 27px;}
+.tab_aera .more .icon_arrow_down{top:3px;right:-2px;position:relative;}
+.tab_aera .more .icon_arrow_down:after{border-top-color:#fff;}
+.tab_aera .tip{background:#fffcf1;border:1px solid #f2d468;line-height:34px;margin:0 29px;font-size:12px;color:#666;}
+.tab_aera .tips_bt{position:absolute;width:288px;line-height:24px;font-size:12px;background:#fffcf1;border:1px solid #f2d468;bottom:-38px;left:-1px;}
+.tab_aera .tips_bt::before{content:"";width:0;height:0;font-size:0;position:absolute;border:4px solid transparent;border-bottom-color:#f2d468;top:-9px;left:11px;}
+.tab_aera .tips_bt::after{content:"";width:0;height:0;font-size:0;position:absolute;border:4px solid transparent;border-bottom-color:#fffcf1;top:-8px;left:11px;}
+.tab_aera .tips_bt .icon,.tab_aera .tip i{display:inline-block;width:16px;height:16px;background:url(../img/tips.png);vertical-align:middle;margin:-3px 5px 0 7px;position:relative;}
+.tab_aera .newcard{display:block;width:288px;height:128px;border:1px dashed #ddd;margin:20px 0 0 25px;}
+.tab_aera .newcard:hover{border-color:#f57403;border-style:solid;}
+.tab_aera .icon_plus{width:50px;height:50px;display:block;position:relative;margin:20px auto 0;}
+.icon_plus i{position:absolute;background:#e1e1e1;font-size:0;}
+.icon_plus .l{width:50px;height:6px;line-height:0;_line-height:6px;left:0;top:22px;}
+.icon_plus .r{height:50px;width:6px;left:22px;top:0;}
+.newcard em{display:block;font-size:18px;text-align:center;line-height:2;margin-top:10px;}
+.inntab{color:#e1e1e1;line-height:50px;padding-left:25px;}
+.inntab .devide{margin:0 8px;}
+.inntab a{font-size:14px;color:#333;}
+.inntab a.act{color:#0088cc;}
+.input_txt{display:inline-block;margin-left:25px;position:relative;*zoom:1;}
+.input_txt input{width:250px;}
+.input_txt i.bank{display:inline-block;width:158px;height:34px;vertical-align:middle;*vertical-align:-2px;}
+.input_txt .loading{position:absolute;width:18px;height:18px;background:url(../img/loading_s.gif);left:236px;top:7px;}
+.input_txt .tips{display:inline-block;border-radius:2px;font-size:12px;color:#666;background:#fffcdb;border:1px solid #f0ddb7;position:relative;margin-left:10px;padding:5px 4px 5px 0;vertical-align:middle;}
+.input_txt .tips .icon{display:inline-block;width:16px;height:16px;background:url(../img/tips.png);vertical-align:-5px;*vertical-align:middle;margin:-2px 5px 0 7px;position:relative;*left:6px;}
+.tips::before{content:"";position:absolute;width:0;height:0;font-size:0;border:4px solid transparent;border-right-color:#f0ddb7;left:-9px;top:50%;margin-top:-4px;}
+.tips::after{content:"";position:absolute;width:0;height:0;font-size:0;border:4px solid transparent;border-right-color:#fffcdb;left:-7px;top:50%;margin-top:-4px;}
+/* bank favorable */
+.bank-favorable{border-bottom:1px dashed #e1e1e1;margin:0 25px;padding:0 0 20px;*zoom:1;}
+.bank-favorable:after{display:block;clear:both;visibility:hidden;height:0;content:".";overflow:hidden;}
+.card-box{float:left;display:inline;padding-left:42px;width:145px;margin-right:35px;margin-top:15px;}
+.card-box .bank-logo{margin-left:-42px;margin-right:6px;float: left;display: inline;}
+.card-box .bank-name{font-weight: normal;font-size: 12px;width: 145px;white-space: nowrap;overflow:hidden;}
+.card-box .favorable-info{color:#f57403;font-size: 12px;margin-top: 1px;}
+/** banklist **/
+.bank_list{border-top:1px solid #e1e1e1;margin:0 25px 6px;font-size:0;}
+.mb-20{margin-bottom:-20px;}
+.bank_list.alone{border:none;margin:0 25px -20px 27px;}
+.bank_list.noti{border:none;margin:20px 25px -5px 27px;}
+.bank_list .ti{height:58px;font-size:16px;}
+.bank_list .ti span{margin-top:18px;}
+.bank_list .ti .bank_type{float:left;}
+.bank_list .ti .bank_type .hint{font-size:12px;color:#999;margin-left:12px;}
+.bank_list .ti .bank_recommend{float:right;}
+.bank_list .ti .bank_recommend a{color:#333;margin:0 5px;font-size:14px;display:inline-block;}
+.bank_list .ti .bank_recommend a.act{color:#0088cc;border-bottom:1px solid #0088cc;position:relative;}
+.bank_list .ti .bank_recommend a.act::before{content:"";position:absolute;width:0;height:0;font-size:0;border:4px solid transparent;border-top-color:#0088cc;left:50%;bottom:-8px;margin-left:-4px;}
+.bank_list .ti .bank_recommend a.act::after{content:"";position:absolute;width:0;height:0;font-size:0;border:4px solid transparent;border-top-color:#fff;left:50%;bottom:-7px;margin-left:-4px;}
+.bank_list .bank_items{margin:0 0 0 -30px;}
+.bank_list_area { height: 400px; overflow-y: scroll; overflow-x: hidden; position: relative;}
+
+.bank_list_area .bank_tit1 {font-family: 'Microsoft YaHei'; font-size: 20px; padding-left: 25px; line-height: 20px; padding-bottom: 16px; }
+.bank_list_area .bank_tit1 i { display: inline-block; width: 6px; height: 6px; overflow: hidden; background: url(../img/list_style_01.png) -9px -39px no-repeat; vertical-align: middle; margin-right: 6px;}
+.bank_list_area .bank_items { *padding-bottom: 20px; _padding-left: 20px;}
+.tab_aera.weixin{color:#999;text-align:center;}
+.tab_aera.weixin p{padding-top:230px;background:url(../img/wechat.png) no-repeat center top;margin:50px 0;}
+.tab_aera .cash{color:#999;line-height:64px;background:url(../img/right.png) no-repeat left center;padding-left:30px;margin:-10px 0 -30px 30px;}
+.tab_aera .cash input{vertical-align:middle;height:auto;line-height:1;margin-top:-2px;}
+.tab_aera .cash label{margin:0 20px 0 0;}
+.tab_aera .company{margin:0 0 0 25px;}
+.tab_aera .company div{position:relative;*zoom:1;}
+.tab_aera .company .loading{position:absolute;width:18px;height:18px;line-height:18px;background:url(../img/loading_s.gif);left:216px;top:7px;}
+.tab_aera .company .right{position:absolute;width:16px;height:16px;_line-height:16px;background:url(../img/right2.png);left:217px;top:8px;}
+.tab_aera .company .ti{line-height:48px;}
+.tab_aera .company input{width:230px;}
+.tab_aera .company .verify{display:inline-block;width:56px;line-height:24px;text-align:center;border:1px solid #ccc;margin:0 0 0 8px;*vertical-align:4px;font-size:14px;color:#333;}
+.tab_aera .company .hint{font-size:12px;color:#999;line-height:2.5;}
+.tab_aera .company .tips,.w_from_con .tips{display:inline-block;border-radius:1px;font-size:12px;color:#666;background:#fffcdb;border:1px solid #f0ddb7;position:relative;margin-left:10px;padding:7px 4px 7px 0;}
+.tab_aera .company .tips i,.w_from_con .tips i{display:inline-block;width:16px;height:16px;background:url(../img/tips.png);vertical-align:middle;margin:-2px 5px 0 7px;position:relative;*left:6px;}
+.tab_aera .company .input_txt{display:block;margin-left:0;}
+.tab_aera .check_list{margin:14px 42px 0 30px;}
+.tab_aera .check_list input{height:auto;line-height:normal;border:none;margin:0;margin-right:3px;vertical-align:middle;}
+.tab_aera .check_list label{margin-right:14px;}
+.tab_aera .check_list label span{color:#999;margin-left:6px;}
+.tab_aera .check_list dt{float:left;margin-top:2px;margin-top:0\0;}
+.tab_aera .check_list dd{font-size:12px;overflow:hidden;*zoom:1;line-height:22px;padding-left:4px;}
+.tab_aera .check_list dd li:hover{background:#f1f9fd;}
+
+/* 订单步骤 */
+.order_step{padding:20px 0 0 30px;margin:20px 0 0 0;}
+.order_step .btn_sub{display:block;}
+.order_step .btn_sub.dis{background-color:#ccc;}
+.security{font-size:12px;color:#999;height:100px;width:100%;background:#f9f9f9;margin:30px 0 0 0;text-align:center;overflow:hidden;}
+.security .md{width:100px;margin:15px 20px 0 20px;display:inline-block;*display:inline;*zoom:1;}
+.security .safety,.security .pci{display:block;width:100px;height:50px;}
+.security .safety{background:url(../img/s1.png) no-repeat center center;}
+.security .pci{background:url(../img/s2.png) no-repeat center center;}
+.foot_notice{font-size:12px;line-height:20px;color:#999;padding-bottom:12px;background:#f0f0f0;padding:10px 20px;}
+.foot_notice dt{font-size:16px;color:#333;padding-bottom:6px;}
+.goback{font-size:14px;display:inline-block;margin-top:10px;}
+.padss{font-size:12px;line-height:50px;color:#333;text-align:center;border-top:1px solid #e1e1e1;margin:0 0 40px 0;}
+.padss a{display:inline-block;width:42px;height:28px;background:url(../img/padss.jpg);margin-right:4px;vertical-align:middle;}
+/** newcard form **/
+.mf{padding:30px 0 50px 0;width:978px;border:1px solid #e1e1e1;position:relative;*zoom:1;min-height:490px;*height:550px;*padding-bottom:120px;_padding-bottom:50px;}
+.mf .ti{position: relative;z-index: 2}
+.mf .popup .ti{height:auto;}
+.mf .lb{display:inline-block;width:114px;text-align:right;margin-right:6px; font-size: 14px;}
+.mf .ti .lb{vertical-align:-7px;}
+.logo_bank{display:inline-block;width:158px;height:34px;border:1px solid #d9d9d9;vertical-align:middle;margin-right:4px;}
+.mf .ti .check_limited{margin-left:60px;vertical-align:-7px;}
+.mf .ti .bank_cut{display:inline-block;vertical-align:top;}
+.mf .ti .bank_cut em{display:block;font-size:12px;color:#999;line-height:20px;margin-top:10px;padding-left:34px;background:url(../img/logo_un.png) no-repeat left center;}
+.mf .ti .bank_cut em.llzf {background:url(../img/llzf.png) no-repeat left center;}
+.hint_limited{position:absolute;left:470px;top:0;font-size:12px;text-align:center;border-radius:6px;background:#fffcd8;width:410px;height:66px;border:1px solid #ddccaa;margin:-3px 0 0 9px;z-index:10;}
+.hint_limited::before{content:"";position:absolute;width:0;height:0;font-size:0;border:6px solid transparent;border-right-color:#ddccaa;left:-13px;top:13px;}
+.hint_limited::after{content:"";position:absolute;width:0;height:0;font-size:0;border:6px solid transparent;border-right-color:#fffcd8;left:-12px;top:13px;}
+.hint_limited table{width:100%;height:100%;margin-left:-1px;}
+.hint_limited th{font-weight:normal;color:#66655c;border-left:1px solid #ddccaa;border-bottom:1px solid #ddccaa;height:32px;line-height:32px;padding:0 5px;}
+.hint_limited th:first-child{border-left:none;}
+.hint_limited td{color:#999785;border-left:1px solid #ddccaa;height:32px;}
+.hint_limited td:first-child{border-left:none;}
+.mf .form_list{margin-top:10px;}
+.mf .form_list li{line-height:48px;margin-left:0;display:block;position:relative;*zoom:1;}
+.input_txt em{display:inline-block;vertical-align:middle;line-height:1.2;white-space:normal;}
+.mf .form_list li input{width:216px;font-size:14px;vertical-align:middle;}
+.mf .form_list li input.s{width:118px;}
+.mf .form_list li input.date{width:72px;}
+.mf .form_list li input.telcode{width:130px;}
+.mf .form_list li .explain{font-size:12px;color:#e1e1e1;}
+.mf .form_list li .tips{line-height:1.2;width:242px;white-space:nowrap;}
+.mf .form_list li .tips em{width:210px;}
+.mf .form_list li .selector{display:inline-block;width:216px;position:relative;}
+.mf .form_list li .selector select{width:226px;border:1px solid #e1e1e1;margin:0;outline:none;padding:5px 0 6px 8px;vertical-align:middle;}
+/* .mf .form_list li .selector .icon_select,.mf .form_list li .selector2 .icon_select{position:absolute;width:0;height:0;font-size:0;border:6px solid transparent;border-top-color:#616161;right:8px;top:12px;display:none\9;}
+*/
+.mf .form_list li .selector2{display:inline-block;width:97px;position:relative;}
+.mf .form_list li .selector2 select{width:101px;padding:5px 0 6px 8px;outline:none;margin:0;border:1px solid #e1e1e1;vertical-align:middle;}
+.verify_tip,.verify_tip2,.verify_tip3{position:absolute;width:98px;height:64px;background:#ebf7fe;border:1px solid #a2d1ea;left:364px;top:50%;margin:-12px 0 0;z-index:20;padding:5px;}
+.verify_tip{background:url(../img/creditcard_verify1.png) no-repeat center center #ebf7fe;}
+.verify_tip2{background:url(../img/creditcard_verify2.png) no-repeat center center #ebf7fe;}
+.verify_tip3{background:url(../img/creditcard_verify3.png) no-repeat center center #ebf7fe;}
+.mf .form_list li .devide{margin:0 7px;}
+.mf .form_list li .loading{position:absolute;width:18px;height:18px;_line-height:18px;background:url(../img/loading_s.gif);left:358px;top:18px;}
+.mf .form_list li .right{position:absolute;width:16px;height:16px;_line-height:16px;background:url(../img/right2.png);left:359px;top:18px;}
+.mf .form_list li .verify{display:inline-block;margin-left:4px;line-height:27px;font-size:12px;width:88px;text-align:center;border:1px solid #bebebe;border-radius:3px;color:#333;vertical-align:middle;}
+.mf .form_list li .verify.dis{background:#ccc;color:#fff;cursor:default;}
+.mf .rem_check{font-size:12px;padding-left:124px;height:38px;padding-top:6px;}
+.mf .rem_check input{border:none;padding:0;vertical-align:-2px;height:auto;}
+.mf .rem_check .hint{display:block;color:#999;margin-top:5px;line-height:20px;}
+.mf .btn_sub{margin:16px 0 0 124px;display:block;}
+.mf .change_pay{font-size:14px;display:inline-block;margin:14px 0 0 124px;}
+.notice1{width:273px;height:315px;background:url(../img/security_b.png) no-repeat center 26px #fff;position:absolute;right:27px;top:29px;border:2px solid #e1e1e1;z-index: 1}
+.notice1 ul,.notice2 ul{color:#999;font-size:12px;line-height:2;padding:0 0 0 30px;}
+.notice1 ul li,.notice2 ul li{width:230px;position:relative;*zoom:1;}
+.notice1 ul i,.notice2 ul i{position:absolute;top:0;left:-12px;}
+.notice1 h6,.notice2 h6{text-align:center;margin:90px 0 23px;font-size:12px;}
+.notice2{width:273px;height:376px;background:url(../img/security_b.png) no-repeat center 26px #fff;position:absolute;right:27px;top:29px;border:2px solid #e1e1e1;}
+.notice2 .padss{line-height:28px;border-top:none;margin-top:12px;}
+.external{background:none;height:auto}
+.external h6{margin:30px 0 23px;}
+.mf .form_list li input.sss{width:89px;}
+.mf .tip{font-size:12px;color:#666;background:#fffcdb;border:1px solid #f0ddb7;line-height:32px;margin:0 0 10px 125px;width:194px;position:relative;*zoom:1;}
+.mf .tip i{display:inline-block;width:16px;height:16px;background:url(../img/tips.png);vertical-align:middle;line-height:0;margin:-2px 8px 0 9px;}
+.mf .tip:before{content:"";position:absolute;width:0;height:0;font-size:0;border:4px solid transparent;border-top-color:#f0ddb7;left:11px;bottom:-9px;}
+.mf .tip::after{content:"";position:absolute;width:0;height:0;font-size:0;border:4px solid transparent;border-top-color:#fffcdb;left:11px;bottom:-8px;}
+/** popup **/
+#mask{width:100%;height:100%;position:fixed;left:0;top:0;background:rgba(0,0,0,0.2);background:url(../img/mask02.png)\9;z-index:99;}
+.popup{position:fixed;z-index:100;left:50%;top:50%;background:#fff;/*-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);*/background-clip:padding-box;padding-bottom:26px;-webkit-font-smoothing:antialiased;_position:absolute; border-radius: 5px; box-shadow: 0px 0px 10px #333;}
+.popup iframe {width:100%; height:100%; position:absolute; top:0; left:0; background:#FFF;}
+.popup.pb{width:960px;margin:-220px 0 0 -485px;padding:0 0 20px 0;}
+.popup.ps{min-width:416px;_width:416px;margin:-113px 0 0 -212px;}
+.popup.wait{width:416px;min-height:130px;*height:130px;margin:-112px 0 0 -212px;}
+/* .popup.wait2{width:415px;min-height:146px;*height:146px;margin:-112px 0 0 -212px\9;}*/
+.popup.fl{min-width:460px;_width:460px;min-height:205px;margin:-200px 0 0 -212px;padding:0 0 30px 0;}
+.popup.pl{margin:-140px 0 0 -300px;}
+.popup.pm { min-width: 758px; _width: 758px; margin: -180px 0 0 -379px; }
+.popup.min{min-width:200px;*width:200px;padding:30px 0;text-align:center;}
+.popup.pm01{min-width:380px;_width:380px;margin:-190px 0 0 -212px;}
+
+.popup .ti{line-height:47px;background:#E7F1FF;color:#579AFE;font-size:16px;text-indent:18px; border-radius: 5px 5px 0 0; border-bottom: 1px solid #579AFE;}
+.popup .close{width:14px;height:14px;position:absolute;background:url(../img/close.png);right:18px;top:18px;overflow:hidden;text-indent:-999em;}
+.popup .bank-wrap{max-height:370px;overflow-y:scroll; overflow-x:hidden;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;margin-left:25px; position: relative;}
+.popup .bank_list{border:none;margin-top:26px;}
+.popup.pb .bank_list{border-top:1px solid #e1e1e1;margin:0 0 6px;}
+.popup.pb .bank_list:first-child{border:0;}
+.popup.pb .bank_list.alone{border-top:none;margin-top:20px;}
+.popup.pb .bank_list_area.alone { margin-top: 0px; padding-top: 20px;}
+.popup .bank_list .ti{line-height:1.5;background:none;text-indent:0; border:none; font-weight: normal; color: #333;}
+.popup.pb .bank_list.alone .bank_items {margin-left:0;}
+.popup .bank_list .bank_items{margin-left:-25px;}
+.popup .bank_item{margin-left:24px;}
+.popup .btn_sub{margin:0 0 0 30px;display:block;}
+.popup .btn_sub.dis{background-color:#ccc;}
+.popup.pb .btn_sub{margin:12px 0 0 25px;}
+.popup .pop_infos{min-width:300px;_width:300px;text-align:center;margin:34px 40px 0 40px;white-space:nowrap;position:relative;}
+.popup .pop_infos em{display:inline-block;text-align:left;line-height:1.6;overflow:hidden;}
+.popup .pop_infos em .b{font-size:15px;font-weight:bold;}
+.popup .pop_infos em .o{font-weight:bold;}
+.popup .pop_infos em .price{color:#ff6600;}
+.popup.wait .pop_infos{margin:50px auto 0;}
+.popup.wait2 .pop_infos{margin:30px 0 0;}
+.popup.wait .pop_infos em{width:260px;margin-left:10px;}
+.popup.wait .pop_infos em .ss{font-size:12px;color:#999;}
+.popup .pop_infos .o{color:#f89742;}
+.popup .pop_infos .loading{width:32px;height:32px;display:inline-block;vertical-align:top;background:url(../img/loading_b.gif);}
+.popup dfn{margin-right:2px;}
+.popup .pop_status{display:inline-block;width:24px;height:24px;background:url(../img/pop_status.png) no-repeat 0 0;vertical-align:top;margin:1px 5px 0 0;}
+.popup .pop_status.wrong{background-position:0 0;}
+.popup .pop_status.warning{background-position:0 -24px;}
+.popup .pop_status.right{background-position:0 -48px;}
+.popup .btns{text-align:center;margin-top:26px;}
+.popup.fl .btns{text-align:left;margin-top:12px;}
+.popup.fl .btns .btn_sub{margin:0 0 0 132px;}
+.popup .btns a{margin:0 20px;display:inline-block;text-align:center; font-size: 12px;}
+.popup .btns .btn_sub{width:115px;line-height:31px;font-size:12px; height: 30px;}
+.popup .btns .cancel{display:inline-block;text-align:center;width:111px;line-height:27px;border:2px solid #d8d8d8;color:#333;font-size:12px;background:#fff;}
+.popup .btns .cancel.long{width:140px;}
+.popup .loadbar{width:100%;height:3px;background:#d9d9d9;position:absolute;left:0;bottom:0;}
+.popup .loadbar .loadbar_inn{width:100%;height:3px;background:#0caeff;}
+.popup .bank_list .bank_items li{margin-left:25px;}
+.popup .pop_form_list{margin:20px 0 0 36px;padding-right:10px}
+.popup .pop_form_list li{line-height:40px;position:relative;*zoom:1;padding-left:80px;white-space:nowrap;}
+.popup .pop_form_list .lbs{display:block;width:96px;vertical-align:middle;margin-left:-80px; float: left;}
+.popup .pop_form_list .lbs .warning{display:inline-block;width:16px;height:16px;line-height:16px;background:url(../img/tips.png);vertical-align:middle;margin:-2px 0 0 4px;}
+.popup .pop_form_list input{width:154px;vertical-align:middle;}
+.popup .pop_form_list input.radio{width:auto;height:auto;border:none;margin:0;margin-right:3px;vertical-align:middle;}
+.popup .pop_form_list em{color:#999;}
+.popup .pop_form_list .forgot{font-size:14px;margin-left:6px;}
+.popup .pop_form_list .tips{line-height:1.5;position:absolute;left:238px;top:0;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);-moz-transform:translateY(-50%);transform:translateY(-50%);border-radius:1px;font-size:12px;color:#666;background:#fffcdb;border:1px solid #f0ddb7;margin-left:6px;padding:4px 4px 5px 0;_width:150px;white-space:nowrap;}
+:root .popup .pop_form_list .tips{top:50%;}
+.popup .pop_form_list .tips em{color:#333;display:inline-block;max-width:136px;*width:120px;vertical-align:middle;white-space:normal;}
+.popup .pop_form_list .tip_m{left:90px;padding-left:8px;}
+.popup .pop_form_list .tips .icon{display:inline-block;width:16px;height:16px;background:url(../img/tips.png);vertical-align:middle;margin:0 5px 0 7px;position:relative;*left:6px;_left:0;}
+.popup .pop_form_list .tips2{position:relative;display:block;line-height:1.5;border-radius:1px;font-size:12px;color:#666;background:#fffcdb;border:1px solid #f0ddb7;margin:4px 0 0 0;padding:4px 4px 5px 0;width:190px;white-space:nowrap;left:16px;}
+.popup .pop_form_list .tips2 .icon{display:inline-block;width:16px;height:16px;background:url(../img/tips.png);vertical-align:middle;margin:0 5px 0 7px;position:relative;}
+.popup .pop_form_list .tips2 em,.popup .tips3 em{color:#333;display:inline-block;vertical-align:middle;white-space:normal;}
+.popup .pop_form_list .tips2 em{max-width:152px;_width:150px;}
+.popup .tips3 em{/* max-width:400px;_width:400px; */}
+.popup .pop_form_list .tips2::before{content:"";position:absolute;width:0;height:0;font-size:0;border:4px solid transparent;border-bottom-color:#f0ddb7;left:11px;top:-9px;}
+.popup .pop_form_list .tips2::after{content:"";position:absolute;width:0;height:0;font-size:0;border:4px solid transparent;border-bottom-color:#fffcdb;left:11px;top:-8px;}
+.popup .tips3{border-radius:1px;font-size:12px;color:#666;background:#fffcdb;border:1px solid #f0ddb7;margin:10px;padding:4px 4px 5px 0;white-space:nowrap;}
+.popup .tips3 .icon{display:inline-block;width:16px;height:16px;background:url(../img/tips.png);vertical-align:middle;margin:0 5px 0 7px;position:relative;}
+.popup .stg{font-size:12px;color:#777;}
+.popup .agreement{width:880px;height:310px;overflow-y:scroll;border-bottom:1px solid #dbdbdb;padding-right:10px;margin:25px auto 0}
+.popup .agreement dt{padding:10px 0;font-weight:bold;}
+.popup .agreement dd{padding-bottom:10px;}
+.popup .agreement h2{font-size:16px;font-weight:normal;margin:0 0 20px 0;}
+.popup .agreement .txt{font-size:12px;margin:20px 0 30px 0;}
+.popup .btn_sub.alc{margin:20px auto 0 auto;}
+.failed{line-height:296px;border:1px solid #B1D0FF;font-size:24px;text-align:center; box-shadow:0px 0px 6px #B1D0FF;}
+.failed .ico{display:inline-block;width:32px;height:32px;background:url(../img/wrong_b.png);vertical-align:middle;margin:-4px 10px 0 0;}
+.popup .pop_form_list2{margin:25px 20px 0 20px;width:552px;}
+.popup .pop_form_list2 li{padding-bottom:14px;margin-left:-16px;}
+.popup .pop_form_list2 li label{margin-left:16px;}
+.popup .pop_form_list2 li input{width:150px;margin-left:8px;}
+.popup .pop_form_list2 li .more{font-size:14px;margin-left:6px;}
+.popup .pop_form_list2 li .more i{font-size:18px;font-weight:bold;vertical-align:-1px;margin-right:2px;}
+.popup .pop_form_list2 li .tip{position:relative;*zoom:1;width:100%;height:34px;}
+.popup .pop_form_list2 li .tip span{display:inline-block;*zoom:1;font-size:12px;color:#666;background:#fffcdb;border:1px solid #efdbb2;line-height:26px;padding-right:7px;position:absolute;}
+.popup .pop_form_list2 li .tip span i{display:inline-block;width:16px;height:16px;background:url(../img/tips.png);vertical-align:middle;line-height:0;margin:-2px 6px 0 6px;}
+.popup .pop_form_list2 li .tip span:before{content:"";width:0;height:0;font-size:0;position:absolute;border:4px solid transparent;border-bottom-color:#efdbb2;top:-8px;left:11px;}
+.popup .pop_form_list2 li .tip span:after{content:"";width:0;height:0;font-size:0;position:absolute;border:4px solid transparent;border-bottom-color:#fffcdb;top:-7px;left:11px;}
+.popup .pop_form_list2 li .tip1{left:94px;top:5px;}
+.popup .pop_form_list2 li .tip2{left:352px;top:5px;}
+.popup .table_md{margin:28px 20px 0 20px;font-size:12px;}
+.popup .table_md .tip{margin-bottom:12px;color:#999;background:url(../img/warning_bl.png) no-repeat left center;padding-left:24px;line-height:16px;}
+.popup .table_md span{color:#ff6600;}
+.popup .table_md table{width:554px;text-align:left;}
+.popup .table_md th{line-height:30px;background:#ededed;font-weight:normal;padding-left:10px;text-align:left;}
+.popup .table_md td{line-height:30px;padding-left:10px;border-bottom:1px dashed #ededed;}
+.popup .table_md td.price{color:#ff6600;}
+.popup .table_md del{color:#999;margin-right:6px;}
+.popup .table_md .flag{display:inline-block;line-height:1;padding:3px;background-color:#fffcdb;border:1px solid #efdbb2;color:#e07900;margin-left:8px;}
+.popup .info_area{border-top:1px dashed #999;margin:20px 34px -28px 34px;}
+.popup .info_area dl{max-width:400px;color:#999;font-size:13px;margin:10px 0;line-height:1.5;}
+.popup .info_area ul{max-width:400px;color:#999;line-height:1.5;font-size:13px;margin:10px 0;}
+.popup .info_area_new1 { width: 400px; max-width: 400px; padding: 10px 0; color: #999; font-size: 13px; line-height: 1.5}
+.popup .division{border-top:1px solid #ddd;color:#666;text-align:center;margin:20px 20px -28px 20px;}
+.popup .division span{font-size:13px;background:#fff;padding:2px;position:relative;top:-12px;}
+.popup .pop_form_list.done,.popup .pop_form_list.done input{color:#999;}
+.popup .pop_form_list .right{display:inline-block;width:16px;height:16px;font-size:0;background:url(../img/right2.png);vertical-align:middle;margin-left:6px;}
+.popup .pop_form_list .btn_verify{display:inline-block;width:90px;line-height:29px;background:#fff;color:#333;text-align:center;border:1px solid #ccc;margin:0 0 0 6px;vertical-align:middle;font-size:14px;}
+.popup .pop_form_list .btn_verify.dis{font-size:12px;background:#ccc;color:#fff;cursor:default;}
+.popup .verified{text-align:left;padding-left:45px;}
+.popup .verified h4{font-size:16px;font-weight:normal;color:#333;line-height:36px;}
+.popup .verified p{font-size:12px;color:#666;line-height:18px;}
+
+/*card-box*/
+.popup .bank-favorable{border:0;margin:0;padding:4px 0 0 18px;background-color:#f7f7f7}
+.popup .bank-favorable table{width:100%}
+.popup .bank-favorable .spacing-line{margin:0 20px;width:1px;height:30px;background:#e1e1e1;vertical-align:middle;}
+.popup .bank-favorable .card-box{margin:0 35px 20px 0;}
+.popup .bankcard-add{padding:40px 100px 60px;width:374px;}
+.popup .bankcard-add h4{font-size: 16px;font-weight: normal;margin-left: 3px}
+.popup .bankcard-add .content{margin-top:12px;}
+.popup .bankcard-add .content input{width: 240px;padding:3px 8px;vertical-align: middle;font-size: 18px;color: #333}
+.popup .bankcard-add .content .btn_sub{width:115px;height: 36px;line-height: 36px;display: inline-block;margin:0 0 0 -1px;vertical-align: middle;}
+.popup .bankcard-add .tips{border-radius:2px;font-size:12px;color:#666;background:#fffcdb;border:1px solid #f0ddb7;display:inline-block;padding:5px 4px 5px 5px;margin-top:10px}
+.popup .bankcard-add .tips:before,.popup .bankcard-add .tips:after{display: none;}
+.popup .bankcard-add .tips i{margin-right:5px;}
+/* addcard 141209 */
+.container{border:1px solid #e4e4e4;padding:0 0 50px;min-height:548px;position:relative;}
+.container .notice2{top:145px;}
+.h2tit{color:#333;font:18px/48px 'microsoft yahei',Tahoma,sans-serif;background-color:#fafafa;background-image:linear-gradient(to right,#fafafa,#fff);padding:0 30px;}
+.h2tit .small{font-size:14px;color:#939393;margin-left:10px}
+.h2tit a.small{font-size:12px;color:#06c;margin-left:10px}
+.h2tit .back{font-size:12px;color:#06c;float:right;display:inline;margin-right:35px;}
+.h3tit{color:#333;font:16px/20px 'microsoft yahei',Tahoma,sans-serif;}
+.addcard{margin-top:35px;}
+.addcard .form_list{margin-top:;}
+.addcard .form_list li .tips{width:auto;max-width:242px}
+.addcard .form_list li .tips em{padding-right:5px;width:auto;max-width:210px;}
+/* icon */
+.icon32-warn,.icon32-fail,.icon32-suc,.icon32-info,.icon32-processing,.icon24-warn,.icon24-fail,.icon24-suc,.icon24-info,.icon24-processing,.icon16-warn,.icon16-fail,.icon16-suc,.icon16-info,.icon16-ask,.icon16-error{display:inline-block;vertical-align:-3px;*vertical-align:middle;background:url(../img/icons.png) no-repeat;}
+.icon32-warn,.icon32-fail,.icon32-suc,.icon32-info,.icon32-processing{width:32px;height:32px;vertical-align:-10px;*vertical-align:middle;}
+.icon32-suc{background-position:0 0;}
+.icon32-warn{background-position:0 -37px;}
+.icon32-fail{background-position:0 -74px;}
+.icon32-info{background-position:0 -111px;}
+.icon32-processing{background-position:0 -148px;}
+.icon24-warn,.icon24-fail,.icon24-suc,.icon24-info,.icon24-processing{width:24px;height:24px;vertical-align:-6px;*vertical-align:middle;margin-right:5px;}
+.icon24-suc{background-position:0 -185px;}
+.icon24-warn{background-position:0 -214px;}
+.icon24-fail{background-position:0 -243px;}
+.icon24-info{background-position:0 -273px;}
+.icon24-processing{background-position:0 -302px;}
+.icon16-warn,.icon16-fail,.icon16-suc,.icon16-info,.icon16-ask,.icon16-error{width:16px;height:16px;font-size:0;}
+.icon16-suc{background-position:0 -331px;}
+.icon16-warn{background-position:0 -352px;}
+.icon16-fail{background-position:0 -373px;}
+.icon16-info{background-position:0 -394px;}
+.icon16-ask{background-position:0 -415px;}
+/* tips */
+.tipsy{background:#fffcdb;border:1px solid #efdbb2;border-radius:2px;color:#787873;display:inline-block;padding:3px 6px 3px 5px;line-height:18px;margin-left:15px;max-width:155px;vertical-align:top;margin-top:3px;position:absolute;}
+.tipsy{*display:inline;}
+.tipsy .icon16-warn{margin:0 5px 0 0;vertical-align:-4px;*vertical-align:middle;}
+.tipsy-arrow{width:5px;height:8px;position:absolute;left:-5px;top:6px;background:url(../img/arrow_tips.png) no-repeat}
+.tipsy em{border-width:5px;border-right-color:#ffbb76;top:1px;left:0;}
+/* form 141209 */
+.ui-select{border:1px solid #e1e1e1;width:160px;height:30px;}
+.form-group .form-item{margin-top:16px;padding-left:125px;font-size:14px;line-height:26px;vertical-align:top;position:relative;z-index: 2;*zoom:1;}
+.form-group .form-item.spacing-s{margin:10px 0 -5px!important;}
+.form-group .form-item .form-label{width:125px;margin-left:-137px;float:left;display:inline;line-height:26px;color:#666;text-align:right;}
+.form-group .form-item .price{font-size:18px;font-weight:700;color:#666;vertical-align:-1px}
+.form-group .form-item .unit{margin-left:8px}
+.form-group .form-item .ipt{width:216px}
+.form-group .form-item input[disabled]{background:#fafafa}
+.form-group .form-item .amount-btn{margin-left:18px}
+.form-group .form-item .tipsy{max-width:205px;font-size:12px;}
+.form-group .form-item.error{margin:10px 0 -10px;}
+.form-group .agreement{margin-top:10px}
+.form-group .available{color:#999;margin-left:40px}
+.form-group .support{color:#999;line-height:20px;border-top:1px solid #e6ebef;font-size:12px;margin:50px 55px 0;padding-top:6px}
+.form-group .support dt{color:#666;font-size:14px;margin-top:15px;}
+.form-group .form-item .sum{color:#999;font-size:14px;}
+.form-group .form-item .explain{font-size:12px;color:#e1e1e1;margin-top:2px;margin-left:5px;}
+.form-group .form-item .explain em{color:#f57403;margin:0 3px;}
+.form-group .form-item .explain strong{color:#666;font-weight:bold;}
+.form-item .loading-24{position:absolute;left:325px;top:3px;}
+.form-item .tips-wrap .tipsy{left:20px;top:-14px;width:280px;max-width:280px}
+.form-item .tips-wrap .tipsy-arrow{top:16px}
+.form-item .bank-logo-long{display:inline-block;vertical-align:top;margin-top:-2px}
+.form-item .hovercard{top:-1px;right:-225px;z-index:1}
+.form-item .hovercard-inner{width:200px;}
+.form-item .ui-select{width:224px;padding-left:2px;}
+.form-item .ui-checkbox{font-size:12px;}
+.form-item .ui-checkbox input[type="checkbox"]{margin-right:5px;height:auto;vertical-align:middle;border:0 none;}
+.form-item .logo_bank{width:128px;vertical-align:middle;margin-top:-5px;margin-right:10px;}
+.form-item .icon16-ask{margin-left:10px;}
+.form-item .return{display:block;margin-top:8px;font-size:14px;width:115px;}
+.pay-limited{display:inline-block;position:relative;margin-left:55px;}
+.pay-limited{*display:inline;}
+.pay-limited .hint_limited{position:absolute;top:-3px;left:75px}
+.addcard-form{margin-top:45px;}
+.form-group .form-item .date{width:72px;}
+.separator{margin-left:5px;margin-right:5px;}
+.btn-getcode{width:90px;font-size:12px;background:#7dc7ef;color:#fff;text-align:center;display:inline-block;height:30px;line-height:30px;vertical-align:middle;margin-left:-8px;cursor:pointer;}
+.btn-getcode.disabled{cursor:default;background:#ccc;}
+.verify-code{position:relative;display:inline-block;line-height:20px;}
+.verify-code{*display:inline;}
+.verify-code .icon16-ask{margin-left:10px}
+.card-verify{background:#ebf8ff;border:1px solid #c0ddef;padding:0 0 10px 10px;width:148px;position:absolute;left:35px;top:-3px;border-radius:2px;z-index:2}
+.card-verify:before{content:"";position:absolute;width:0;height:0;font-size:0;border:5px solid transparent;border-right-color:#a2d1ea;left:-10px;top:8px;}
+.card-verify:after{content:"";position:absolute;width:0;height:0;font-size:0;border:5px solid transparent;border-right-color:#ebf7fe;left:-9px;top:8px;}
+.card-verify h5{font-size:12px;font-weight:normal;color:#666;margin-top:10px;}
+.card-verify h5:first-child{margin-top:5px;}
+/*无法支付*/
+#wrapper-remind{border:1px solid #dedede;width:auto;max-width:1178px;min-width:978px;margin:0 auto;overflow:visible;padding:129px 0 121px;}
+.warn-info{line-height:22px;font-size:14px;color:#4D4D4D;position:relative;width:400px;margin:0 auto;}
+.warn-info h2{font:16px/1.5 'microsoft yahei',arial,Tahoma,sans-serif;color:#000;padding-bottom:12px;padding-left:50px;margin-top: 20px;}
+.customer-service{padding:8px 0 5px 0;overflow:hidden;zoom:1;}
+.customer-service li{width:50%;float:left;display:inline;line-height:36px;color:#8d8d8d;font-size: 12px;line-height: 18px}
+.ico-cry{width:60px;height: 60px;display: block;background: url(../img/cry.png);margin-left:148px;}
+
+/* creditcard */
+
+.more_alipay{background-image:url(../img/bank/alipay.png);background-repeat:no-repeat;}
+.more_wechat{background-image:url(../img/bank/more_wechat.png);background-repeat:no-repeat;}
+.more_baidu{background-image:url(../img/bank/baidu.png);background-repeat:no-repeat;}
+.more_1qianbao {background-image:url(../img/bank/1qianbao.png);background-repeat:no-repeat;}
+.more_qqpay { background-image:url(../img/bank/qqpay.png);background-repeat:no-repeat;}
+
+/* other banks */
+.creditcard_bocd{background-image:url(../img/bank/bocd.png);} /* 成都银行 */
+.creditcard_cdrcb{background-image:url(../img/bank/cdrcb.png);}
+.creditcard_cdb{background-image:url(../img/bank/cdb.png);}
+.creditcard_cqrcb{background-image:url(../img/bank/cqrcb.png);}
+.creditcard_csrcb{background-image:url(../img/bank/csrcb.png);}
+.creditcard_czcb{background-image:url(../img/bank/czcb.png);}
+.creditcard_grcb{background-image:url(../img/bank/grcb.png);}
+.creditcard_gyccb{background-image:url(../img/bank/gyccb.png);}
+.creditcard_gzcb{background-image:url(../img/bank/gzcb.png);}
+.creditcard_gzccb{background-image:url(../img/bank/gzccb.png);}
+.creditcard_heb{background-image:url(../img/bank/heb.png);}
+.creditcard_hrbcb{background-image:url(../img/bank/hrbcb.png);}
+.creditcard_hsbank{background-image:url(../img/bank/hsb.png);}
+.creditcard_jjccb{background-image:url(../img/bank/jjccb.png);}
+.creditcard_jprcu{background-image:url(../img/bank/jprcu.png);}
+.creditcard_jxccb{background-image:url(../img/bank/jxccb.png);} /* 嘉兴银行 */
+.creditcard_ljbc{background-image:url(../img/bank/ljbc.png);}
+.creditcard_bol{background-image:url(../img/bank/bol.png);}
+.creditcard_mtb{background-image:url(../img/bank/mtb.png);}
+.creditcard_nccb{background-image:url(../img/bank/nccb.png);}
+.creditcard_njcb{background-image:url(../img/bank/njcb.png);}
+.creditcard_qbccb{background-image:url(../img/bank/qbccb.png);}
+.creditcard_qlbc{background-image:url(../img/bank/qlbc.png);}
+.creditcard_sdeb{background-image:url(../img/bank/sdeb.png);}
+.creditcard_sdnxs{background-image:url(../img/bank/sdnxs.png);} /* 山东农信社 */
+.creditcard_srb{background-image:url(../img/bank/srb.png);}
+.creditcard_srcb{background-image:url(../img/bank/srbc.png);}
+.creditcard_scb{background-image:url(../img/bank/scb.png);} /* 渣打银行 */
+.creditcard_szb{background-image:url(../img/bank/szb.png);} /* 苏州银行 */
+.creditcard_taccb{background-image:url(../img/bank/taccb.png);} /* 泰安市商业银行 */
+.creditcard_tzb{background-image:url(../img/bank/tzb.png);}
+.creditcard_uccb{background-image:url(../img/bank/uccb.png);}
+.creditcard_wfccb{background-image:url(../img/bank/wfccb.png);}
+.creditcard_whccb{background-image:url(../img/bank/whccb.png);}
+.creditcard_wjrcb{background-image:url(../img/bank/wjrcb.png);}
+.creditcard_wrcb{background-image:url(../img/bank/wrcb.png);}
+.creditcard_wzcb{background-image:url(../img/bank/wzcb.png);}
+.creditcard_xmccb{background-image:url(../img/bank/xmccb.png);}
+.creditcard_zrcb{background-image:url(../img/bank/zrcb.png);}
+.creditcard_bsb{background-image:url(../img/bank/bsb.png);}
+.creditcard_dyccb{background-image:url(../img/bank/dyccb.png);}
+.creditcard_fdb{background-image:url(../img/bank/fdb.png);}
+.creditcard_hnnxs{background-image:url(../img/bank/hnnxs.png);}
+.creditcard_jyrcb{background-image:url(../img/bank/jyrcb.png);}
+.creditcard_ordosbank{background-image:url(../img/bank/ordosbank.png);}
+.creditcard_szrcb{background-image:url(../img/bank/szrcb.png);} /* 深圳农商银行 */
+.creditcard_cgnb{background-image:url(../img/bank/cgnb.png);}
+.creditcard_qhrcb{background-image:url(../img/bank/qhrcb.png);}
+.creditcard_pdscb{background-image:url(../img/bank/pdscb.png);} /* 平顶山银行 */
+.creditcard_gxrcb{background-image:url(../img/bank/gxrcb.png);}/* 广西农信 */
+.creditcard_nmgrcb{background-image:url(../img/bank/nmgrcb.png);}
+.creditcard_smxb{background-image:url(../img/bank/smxb.png);}
+.creditcard_hdcb{background-image:url(../img/bank/hdcb.png);} /* 邯郸银行 */
+.creditcard_shb{background-image:url(../img/bank/shb.png);}
+.creditcard_hbb{background-image:url(../img/bank/hbb.png);} /* 湖北银行 */
+.creditcard_boimc{background-image:url(../img/bank/boimc.png);} /* 内蒙古银行 */
+.creditcard_lsccb{background-image:url(../img/bank/lsccb.png);}
+.creditcard_jxb{background-image:url(../img/bank/jxb.png);} /* 晋城银行 */
+.creditcard_drcb{background-image:url(../img/bank/drcb.png);}
+.creditcard_bdb{background-image:url(../img/bank/bdb.png);}
+.creditcard_citybank{background-image:url(../img/bank/citybank.png);}
+.creditcard_klb{background-image:url(../img/bank/klb.png);}
+.creditcard_asrbs{background-image:url(../img/bank/asrbs.png);}
+.creditcard_hebnx{background-image:url(../img/bank/hebnx.png);}
+.creditcard_hbxh{background-image:url(../img/bank/hbxh.png);}
+.creditcard_jnrcb{background-image:url(../img/bank/jnrcb.png);}
+.creditcard_jxnxs{background-image:url(../img/bank/jxnxs.png);}
+.creditcard_scrcu{background-image:url(../img/bank/scrcu.png);}/* 四川农信 */
+.creditcard_tsbank{background-image:url(../img/bank/tsbank.png);}
+.creditcard_cbhb {background-image:url(../img/bank/cbhb.png);} /* 渤海银行 */
+.creditcard_deyangccb{background-image:url(../img/bank/deyangccb.png);}
+/* no used */
+.creditcard_beeb{background-image:url(../img/bank/beeb.png);}
+.creditcard_bjrcb{background-image:url(../img/bank/bjrcb.png);}
+.creditcard_cqcb{background-image:url(../img/bank/cqcbank.png);}
+.creditcard_cscb{background-image:url(../img/bank/cscb.png);}
+.creditcard_czbank{background-image:url(../img/bank/czbank.png);}
+.creditcard_bankofdl{background-image:url(../img/bank/dlbank.png);}
+.creditcard_dongguanbank{background-image:url(../img/bank/dongguanbank.png);}
+.creditcard_dzbchina{background-image:url(../img/bank/dzbchina.png);}
+.creditcard_hfboc {background-image:url(../img/bank/egbank.png);} /* 恒丰银行 */
+.creditcard_fjnx{background-image:url(../img/bank/fjnx.png);}
+.creditcard_crcb{background-image:url(../img/bank/grcbank.png);}
+.creditcard_hzbank{background-image:url(../img/bank/hzbank.png);}
+.creditcard_hkbchina{background-image:url(../img/bank/hkbchina.png);}
+.creditcard_jnccb{background-image:url(../img/bank/jhccb.png);}
+.creditcard_jiangmingbank{background-image:url(../img/bank/jiangmingbank.png);}
+.creditcard_boj{background-image:url(../img/bank/jinzhoubank.png);}
+.creditcard_jnbank{background-image:url(../img/bank/jnbank.png);}
+.creditcard_kunmingcb{background-image:url(../img/bank/kunmingcb.png);}
+.creditcard_lsbankchina{background-image:url(../img/bank/lsbankchina.png);}
+.creditcard_boq{background-image:url(../img/bank/qhbank.png);}
+.creditcard_rizhaobank{background-image:url(../img/bank/rizhaobank.png);}
+.creditcard_sjb{background-image:url(../img/bank/shengjingbank.png);} /* 盛京银行 */
+.creditcard_tccb{background-image:url(../img/bank/tccb.png);} /* 天津银行 */
+.creditcard_yccb{background-image:url(../img/bank/yccb.png);}
+.creditcard_ycccb{background-image:url(../img/bank/ycccb.png);}
+.creditcard_zjnx{background-image:url(../img/bank/zjnx.png);}
+.creditcard_zjtlcb{background-image:url(../img/bank/zjtlcb.png);}
+.creditcard_ydrcb{background-image:url(../img/bank/ydrcb.png);}
+
+/* 2015-05-27 */
+.creditcard_ctgb{background-image:url(../img/bank/ctgb.png);}
+.creditcard_zzb{background-image:url(../img/bank/zzb.png);} /* 郑州银行 */
+.creditcard_hhbc {background-image:url(../img/bank/yrrcb.png);} /* 黄河银行 */
+.creditcard_nyb{background-image:url(../img/bank/nyb.png);}
+.creditcard_cab{background-image:url(../img/bank/cab.png);} /* 长安银行 */
+.creditcard_crb{background-image:url(../img/bank/crb.png);}
+.creditcard_hrcc{background-image:url(../img/bank/hrcc.png);}
+.creditcard_hrxb{background-image:url(../img/bank/hrxb.png);} /* 华融湘江 */
+.creditcard_srccu{background-image:url(../img/bank/srccu.png);} /* 陕西信合 */
+.creditcard_xrccu{background-image:url(../img/bank/xrccu.png);}
+.creditcard_bobbg{background-image:url(../img/bank/bobbg.png);}
+.creditcard_bofs{background-image:url(../img/bank/bofs.png);} /* 抚顺银行 */
+.creditcard_bohld{background-image:url(../img/bank/bohld.png);}
+.creditcard_byk{background-image:url(../img/bank/byk.png);} /* 营口银行 */
+.creditcard_caccb{background-image:url(../img/bank/caccb.png);}/* 沧州银行 */
+.creditcard_cycb{background-image:url(../img/bank/cycb.png);}
+.creditcard_fjhxbank{background-image:url(../img/bank/fjhxbank.png);}
+.creditcard_ftyzb{background-image:url(../img/bank/ftyzb.png);}
+.creditcard_glccb{background-image:url(../img/bank/glccb.png);} /* 桂林银行 */
+.creditcard_gsrcu{background-image:url(../img/bank/gsrcu.png);} /* 甘肃农信 */
+.creditcard_hbsb{background-image:url(../img/bank/hbsb.png);}
+.creditcard_hnb{background-image:url(../img/bank/hnb.png);}
+.creditcard_hscb{background-image:url(../img/bank/hscb.png);}/* 衡水商行 */
+.creditcard_ibk{background-image:url(../img/bank/ibk.png);}
+.creditcard_jzb{background-image:url(../img/bank/jzb.png);} /* 晋中银行 */
+.creditcard_ksrcb{background-image:url(../img/bank/ksrcb.png);}
+.creditcard_lhb{background-image:url(../img/bank/lhb.png);}
+.creditcard_lzcb{background-image:url(../img/bank/lzcb.png);} /* 柳州银行 */
+.creditcard_lzccb{background-image:url(../img/bank/lzccb.png);}
+.creditcard_pzhccb{background-image:url(../img/bank/pzhccb.png);}
+.creditcard_qhdb{background-image:url(../img/bank/qhdb.png);}
+.creditcard_qjccb{background-image:url(../img/bank/qjccb.png);}
+.creditcard_qzrcu{background-image:url(../img/bank/qzccb.png);} /* 泉州银行 */
+.creditcard_sgb{background-image:url(../img/bank/sgb.png);}
+.creditcard_snccb{background-image:url(../img/bank/snccb.png);}
+.creditcard_xccb{background-image:url(../img/bank/xccb.png);}
+.creditcard_xjkccb{background-image:url(../img/bank/xjkccb.png);}
+.creditcard_xtb{background-image:url(../img/bank/xtb.png);} /* 邢台银行 */
+.creditcard_yaccb{background-image:url(../img/bank/yaccb.png);}
+.creditcard_yqccb{background-image:url(../img/bank/yqccb.png);}
+.creditcard_yxccb{background-image:url(../img/bank/yxccb.png);}
+.creditcard_zgb{background-image:url(../img/bank/zgb.png);}
+.creditcard_zyccb{background-image:url(../img/bank/zyccb.png);}
+.creditcard_ahrcu{background-image:url(../img/bank/ahrcu.png);}
+.creditcard_ayb{background-image:url(../img/bank/ayb.png);}
+.creditcard_dongguan {background-image:url(../img/bank/dgcb.png);}/* 东莞银行 */
+.creditcard_dlcb{background-image:url(../img/bank/dlcb.png);}
+.creditcard_dzbc{background-image:url(../img/bank/dzcc.png);}/* 德州银行 */
+.creditcard_frcc{background-image:url(../img/bank/frcc.png);}
+.creditcard_gdrcb{background-image:url(../img/bank/gdrcb.png);}
+.creditcard_jlb{background-image:url(../img/bank/jlb.png);} /* 吉林银行 */
+.creditcard_jlnls{background-image:url(../img/bank/jlnls.png);}
+.creditcard_jnccb{background-image:url(../img/bank/jnccb.png);}
+.creditcard_lsbc{background-image:url(../img/bank/lsbc.png);} /* 临商银行 */
+.creditcard_lspcb{background-image:url(../img/bank/lspcb.png);}
+.creditcard_lwcb{background-image:url(../img/bank/lwcb.png);}
+.creditcard_ndhb{background-image:url(../img/bank/ndhb.png);}
+.creditcard_sqb{background-image:url(../img/bank/sqb.png);}
+.creditcard_sxrcb{background-image:url(../img/bank/sxrcb.png);}
+.creditcard_tcrcb{background-image:url(../img/bank/tcrcb.png);}
+.creditcard_tjbhb{background-image:url(../img/bank/tjbhb.png);} /* 天津滨海农村商业银行 */
+.creditcard_uobc{background-image:url(../img/bank/uobc.png);}
+.creditcard_whcb{background-image:url(../img/bank/whcb.png);}
+.creditcard_ybccb{background-image:url(../img/bank/ybccb.png);}
+.creditcard_ynrcc{background-image:url(../img/bank/ynrcc.png);}
+.creditcard_zkb{background-image:url(../img/bank/zkb.png);} /* 周口银行 */
+.creditcard_zrccu{background-image:url(../img/bank/zrccu.png);}
+.creditcard_jprcu{background-image:url(../img/bank/jprcu.png);}
+.creditcard_hrbcb{background-image:url(../img/bank/hrbcb.png);}
+.creditcard_jxccb{background-image:url(../img/bank/jxccb.png);}
+.creditcard_jyrcb{background-image:url(../img/bank/jyrcb.png);}
+.creditcard_mtb{background-image:url(../img/bank/mtb.png);}
+.creditcard_jxbc {background-image:url(../img/bank/nccb.png);} /* 江西银行 */
+.creditcard_ordosbank{background-image:url(../img/bank/ordosbank.png);}
+.creditcard_sdnxs{background-image:url(../img/bank/sdnxs.png);}
+.creditcard_srb{background-image:url(../img/bank/srb.png);}
+.creditcard_tzb{background-image:url(../img/bank/tzb.png);}
+.creditcard_uccb{background-image:url(../img/bank/uccb.png);}
+.creditcard_wfccb{background-image:url(../img/bank/wfccb.png);}
+.creditcard_wjrcb{background-image:url(../img/bank/wjrcb.png);}
+.creditcard_czccb{background-image:url(../img/bank/czccb.png);}
+.creditcard_hsb{background-image:url(../img/bank/hsb.png);}
+.creditcard_zjkccb{background-image:url(../img/bank/zjkccb.png);} /* 张家口银行 */
+
+/* 2015-11-26 */
+.creditcard_dzccb {background-image:url(../img/bank/dzccb.png);}
+.creditcard_ghb {background-image:url(../img/bank/ghb.png);}
+.creditcard_gsb {background-image:url(../img/bank/gsb.png);} /* 甘肃银行 */
+.creditcard_gzrcu {background-image:url(../img/bank/gzrcu.png);}
+.creditcard_jnbank {background-image:url(../img/bank/jnbank.png);}
+.creditcard_lwbc {background-image:url(../img/bank/laisb.png);} /* 莱商银行 */
+.creditcard_szsb {background-image:url(../img/bank/szsb.png);} /* 石嘴山银行 */
+.creditcard_xhrcb {background-image:url(../img/bank/xhrcb.png);}
+
+/* 2016-07-26 */
+.creditcard_hkbc {background-image:url(../img/bank/hkcb.png);} /* 海口农商银行 */
+.creditcard_hzbc {background-image:url(../img/bank/hzcb.png);} /* 湖州银行 */
+.creditcard_lybc {background-image:url(../img/bank/lycb.png);} /* 辽阳银行 */
+.creditcard_ncbc {background-image:url(../img/bank/ncb.png);} /* 南洋银行 */
+.creditcard_czb {background-image:url(../img/bank/zscb.png);} /* 浙商银行 */
+.creditcard_qhdcb{background-image:url(../img/bank/qhdcb.png);} /* 秦皇岛银行 */
+.creditcard_ddbc{background-image:url(../img/bank/bodd.png);} /* 丹东银行 */
+.creditcard_fxb{background-image:url(../img/bank/fxcb.png);} /* 阜新银行 */
+.creditcard_hfbc{background-image:url(../img/bank/hsbc.png);} /* 汇丰银行 */
+.creditcard_nxcb{background-image:url(../img/bank/nxcb.png);} /* 宁夏银行 */
+.creditcard_sxccb{background-image:url(../img/bank/sxcb.png);} /* 绍兴银行 */
+.creditcard_xacb{background-image:url(../img/bank/xacb.png);} /* 西安银行 */
+.creditcard_xybc{background-image:url(../img/bank/xycb.png);} /* 信阳银行 */
+.creditcard_zmdb{background-image:url(../img/bank/cmdcb.png);} /* 驻马店银行 */
+
+
+/* 2016-08-25 */
+.creditcard_nbbank{background-image:url(../img/bank/nbbank.png);}/* 宁波银行 */
+
+/* 2016-08-26 */
+.creditcard_cmb{background-image:url(../img/bank/cmb.png);background-repeat:no-repeat;} /*招商银行*/
+.creditcard_ccb{background-image:url(../img/bank/ccb.png);} /*建设银行*/
+.creditcard_icbc{background-image:url(../img/bank/icbc.png);} /*中国工商银行*/
+.creditcard_boc{background-image:url(../img/bank/boc.png);}/* 中国银行 */
+.creditcard_gc_union {background-image:url(../img/bank/gc_union.png);}/* 中国银联 */
+.creditcard_comm{background-image:url(../img/bank/comm.png);}/* 交通银行 */
+.creditcard_abc{background-image:url(../img/bank/abc.png);}/* 农业银行 */
+.creditcard_gdb{background-image:url(../img/bank/gdb.png);} /* 广发银行 */
+.creditcard_spdb{background-image:url(../img/bank/spdb.png);}/* 浦发银行 */
+.creditcard_cmbc{background-image:url(../img/bank/cmbc.png);}/* 民生银行 */
+.creditcard_citic{background-image:url(../img/bank/citic.png);}/* 中信银行 */
+.creditcard_spabank,.creditcard_sdb{background-image:url(../img/bank/sdb.png);}/* 平安银行 */
+.creditcard_cebbank{background-image:url(../img/bank/cebbank.png);}/* 中国光大银行 */
+.creditcard_cib{background-image:url(../img/bank/cib.png);}/* 兴业银行 */
+.creditcard_shbank{background-image:url(../img/bank/shbank.png);} /* 上海银行 */
+.creditcard_bjbank{background-image:url(../img/bank/bjbank.png);} /* 北京银行 */
+.creditcard_hxb{background-image:url(../img/bank/hxb.png);} /* 华夏银行 */
+.creditcard_jsb{background-image:url(../img/bank/jsb.png);}/* 江苏银行 */
+.creditcard_psbc{background-image:url(../img/bank/psbc.png);} /* 中国邮政银行 */
+.creditcard_hkbea{background-image:url(../img/bank/hkbea.png);} /* 东亚银行 */
+.creditcard_visa{background-image:url(../img/bank/visa.png);} /* visa */
+.creditcard_mastercard{background-image:url(../img/bank/mastercard.png);}/* mastercard */
+.creditcard_jcb{background-image:url(../img/bank/jcb.png);}/* jcb */
+.creditcard_americanexpress{background-image:url(../img/bank/americanexpress.png);} /* americanexpress */
+.creditcard_DinersClub{background-image:url(../img/bank/DinersClub.png);}/* DinersClub */
+.more_ump{background-image:url(../img/bank/ump.png);} /* 银联手机支付 */
+.more_unionpay{background-image:url(../img/bank/unionpay.png);}/* 银联在线支付 */
+.more_tenpay{background-image:url(../img/bank/tenpay.png);}/* 财付通 */
+.more_paypal{background-image:url(../img/bank/paypal.png);}/* paypal */
+.more_chinapay{background-image:url(../img/bank/chinapay.png);} /* 银联电子支付公司 */
+.more_alipayscan{background-image:url(../img/bank/alipayscan.png);} /* 支付宝扫码支付 */
+
+
+.bank-logo{width:32px;height:32px;display:inline-block;vertical-align:top;background: url(../img/bank_logo_32/bank_logo.png)}
+.ICBC{background: url(../img/bank_logo_32/icbc.png); } 									/*工商银行-ICBC*/
+.ABC{background: url(../img/bank_logo_32/abc.png); } 										/*农业银行-ABC*/
+.CCB{background: url(../img/bank_logo_32/ccb.png);} 									 	/*建设银行*/
+.AMERICANEXPRESS{background: url(../img/bank_logo_32/american_express_ae.png); } 			/*American-Express-AE*/
+.CEBBANK{background: url(../img/bank_logo_32/ceb.png);} 								    /*光大银行-CEB*/
+.CIB{background: url(../img/bank_logo_32/cib.png);} 										/*兴业银行-CIB*/
+.CITIC{background: url(../img/bank_logo_32/citic.png);} 									/*中信银行-CITIC*/
+.CMB{background: url(../img/bank_logo_32/cmb.png);} 										/*招商银行-CMB*/
+.CMBC{background: url(../img/bank_logo_32/cmbc.png);} 									/*民生银行-CMBC*/
+.COMM{background: url(../img/bank_logo_32/comm.png);} 									/*交通银行-COMM*/
+.CQCB{background: url(../img/bank_logo_32/cqbank.png);} 									/*重庆银行-CQcb*/
+.GDB{background: url(../img/bank_logo_32/gdb.png);} 										/*广发银行-GDB*/
+.SPABANK,.SDB{background: url(../img/bank_logo_32/spabank.png);} 							/*平安银行-SPABANK 深发展SDB 俩银行合并了*/ 
+.SPDB{background: url(../img/bank_logo_32/spdb.png);} 									/*浦发银行-SPDB*/
+.SHBANK{background: url(../img/bank_logo_32/shbank.png);} 								/*上海银行-SHBANK*/
+.BJBANK{background: url(../img/bank_logo_32/bjbank.png);} 								/*北京银行-BJBANK*/
+.BOC{background: url(../img/bank_logo_32/boc.png);} 										/*中国银行*/     
+.HXB{background: url(../img/bank_logo_32/hxb.png);} 										/*华夏银行-HXB*/
+.JSB{background: url(../img/bank_logo_32/jsb.png);} 										/*江苏银行-JSB*/
+.PSBC{background: url(../img/bank_logo_32/psbc.png);} 									/*邮政储蓄银行-PSBC*/
+.NBBANK{background: url(../img/bank_logo_32/nbbank.png);} 								/*宁波银行-NBBANK*/
+.HKBEA{background: url(../img/bank_logo_32/hkbea.png);} 									/*东亚银行-HKBEA*/
+.VISA{background: url(../img/bank_logo_32/visa_c1.png);}
+.MASTERCARD{background: url(../img/bank_logo_32/maste_master.png);}
+.JCB{background: url(../img/bank_logo_32/jcb.png);}
+.DINERSCLUB{background: url(../img/bank_logo_32/diners_card_dc.png);}
+
+.AHRCU{background: url(../img/bank_logo_32/arcu.png);} 									/*安徽农信社-ARCU*/
+.AYB{background: url(../img/bank_logo_32/aycb.png);} 									/*安阳银行-AYCB*/
+.BEEB{background: url(../img/bank_logo_32/beeb.png);} 									/*鄞州银行-BEEB*/
+.BGB{background: url(../img/bank_logo_32/bgb.png);} 										/*广西北部湾银行-BGB*/
+.HEB{background: url(../img/bank_logo_32/bhb.png);} 										/*河北银行-heb*/                                            
+.BJRCB{background: url(../img/bank_logo_32/bjrcb.png);} 									/*北京农商银行-BJRCB*/                                                                     
+.CYCB{background: url(../img/bank_logo_32/bocy.png);} 									/*朝阳银行-cycb*/                                           
+.BOD{background: url(../img/bank_logo_32/bod.png);}                						/*东莞银行-BOD*/                                            
+.BODD{background: url(../img/bank_logo_32/bodd.png);}  									/*丹东银行-BODD*/                                           
+.CBNB{background: url(../img/bank_logo_32/bohaib.png);} 									/*渤海银行-cbnb*/                                         
+.HBSB{background: url(../img/bank_logo_32/bohb.png);}  									/*鹤壁银行-hbsb*/                                           
+.PDSCB{background: url(../img/bank_logo_32/bop.png);}  									/*平顶山银行-pdscb*/                                          
+.SHB{background: url(../img/bank_logo_32/bosh.png);} 									/*新韩银行-shb*/                                           
+.SZB{background: url(../img/bank_logo_32/bosz.png);} 									/*苏州银行-szb*/                                           
+.BYK{background: url(../img/bank_logo_32/boyk.png);} 									/*营口银行-BYK*/                                           
+.ZKB{background: url(../img/bank_logo_32/bozk.png);} 									/*周口银行-zkb*/                                           
+.BSB{background: url(../img/bank_logo_32/bsb.png);} 										/*包商银行-BSB*/                                            
+.CSCB{background: url(../img/bank_logo_32/bscb.png);} 									/*长沙银行-cscb*/                                           
+.BZMD{background: url(../img/bank_logo_32/bzmd.png);} 									/*驻马店银行-BZMD*/                                         
+.CABANK{background: url(../img/bank_logo_32/cabank.png);} 								/*长安银行-CABANK*/                                         
+.CBKF{background: url(../img/bank_logo_32/cbkf.png);} 									/*开封市商业银行-CBKF*/                                     
+.CCQTGB{background: url(../img/bank_logo_32/ccqtgb.png);} 								/*重庆三峡银行-CCQTGB*/
+.CDB{background: url(../img/bank_logo_32/cdbank.png);} 									/*承德银行-cdb*/                
+.BOCD{background: url(../img/bank_logo_32/cdcb.png);} 									/*成都银行-bocd*/                                           
+.CDRCB{background: url(../img/bank_logo_32/cdrcb.png);} 									/*成都农村商业银行-CDRCB*/                        
+.CGNB{background: url(../img/bank_logo_32/cgnb.png);} 									/*南充市商业银行-CGNB*/                                     
+.CQRCB{background: url(../img/bank_logo_32/cqrcb.png);} 									/*重庆农村商业银行-CQRCB*/
+.CSRCB{background: url(../img/bank_logo_32/csrcb.png);} 									/*常熟农村商业银行-CSRCB*/
+.CZCB{background: url(../img/bank_logo_32/czcb.png);} 									/*浙江稠州商业银行-CZCB*/
+.CZCCB{background: url(../img/bank_logo_32/czccb.png);} 									/*长治市商业银行-CZCCB*/
+.CZRCB{background: url(../img/bank_logo_32/czrcb.png);} 									/*江南农商行-CZRCB*/
+.DBSCN{background: url(../img/bank_logo_32/dbscn.png);} 									/*星展银行-DBSCN*/
+.DLB{background: url(../img/bank_logo_32/dlb.png);} 										/*大连银行-DLB*/
+.DRCBCL{background: url(../img/bank_logo_32/drcbcl.png);} 								/*东莞农商行-DRCBCL*/
+.DEYANGCCB{background: url(../img/bank_logo_32/dycb.png);} 								/*德阳银行-deyangccb*/
+.DYCCB{background: url(../img/bank_logo_32/dyccb.png);} 									/*东营银行-DYCCB*/
+.DZBANK{background: url(../img/bank_logo_32/dzbank.png);} 								/*德州银行-DZBANK*/
+.EGBANK{background: url(../img/bank_logo_32/egbank.png);} 								/*恒丰银行-EGBANK*/
+.FDB{background: url(../img/bank_logo_32/fdbank.png);} 									/*富滇银行-FDB*/
+.FJHXBANK{background: url(../img/bank_logo_32/fjhxbc.png);} 								/*福建海峡银行-fjhxbank*/
+.FJNX{background: url(../img/bank_logo_32/fjnx.png);} 									/*福建省农村信用社-FJNX*/
+.BOFS{background: url(../img/bank_logo_32/fscb.png);} 									/*抚顺银行-BOFS*/
+.FXCB{background: url(../img/bank_logo_32/fxcb.png);} 									/*阜新银行-FXCB*/
+.GDRCC{background: url(../img/bank_logo_32/gdrcc.png);} 									/*广东农信社-GDRCC*/
+.GHB{background: url(../img/bank_logo_32/ghb.png);} 										/*广东华兴银行-GHB*/
+.GLCCB{background: url(../img/bank_logo_32/glbank.png);} 								/*桂林银行-GLBANK*/
+.GRCB{background: url(../img/bank_logo_32/grcb.png);} 									/*广州农村商业银行-GRCB*/
+.GSRCU{background: url(../img/bank_logo_32/gsrcu.png);} 									/*甘肃农信社-GSRCU*/
+.GXRCU{background: url(../img/bank_logo_32/gxrcu.png);} 									/*广西壮族自治区农信社-GXRCU*/
+.GYCCB{background: url(../img/bank_logo_32/gyccb.png);} 									/*贵阳银行-GYCCB*/
+.GZCB{background: url(../img/bank_logo_32/gzcb.png);} 									/*广州银行-GZCB*/
+.GZCCB{background: url(../img/bank_logo_32/gzccb.png);} 									/*赣州银行-GZCCB*/
+.GZRCU{background: url(../img/bank_logo_32/gzrcu.png);} 									/*贵州农信社-GZRCU*/
+.BOIMC{background: url(../img/bank_logo_32/h3cb.png);} 									/*内蒙古银行-boimc*/
+.HANABANK{background: url(../img/bank_logo_32/hanabank.png);} 							/*韩亚银行-HANABANK*/
+.YCCB{background: url(../img/bank_logo_32/hbbank.png);} 									/*宜昌市商业银行-yccb*/
+.HBB{background: url(../img/bank_logo_32/hbc.png);} 										/*湖北银行-HBB*/
+.HBRCU{background: url(../img/bank_logo_32/hbrcu.png);} 									/*河北农信社-HBRCU*/
+.HDCB{background: url(../img/bank_logo_32/hdbank.png);} 									/*邯郸银行-hdcb*/
+.HKB{background: url(../img/bank_logo_32/hkb.png);} 										/*汉口银行-HKB*/
+.HNNXS{background: url(../img/bank_logo_32/hnnx.png);} 									/*湖南省农村信用社联合社-hnnxs*/
+.HNRCU{background: url(../img/bank_logo_32/hnrcu.png);} 									/*河南农信社-HNRCU*/
+.HRBCB{background: url(../img/bank_logo_32/hrbcb.png);} 									/*哈尔滨银行-HRBCB*/
+.HSB{background: url(../img/bank_logo_32/hsbank.png);} 								    /*徽商银行-HSBANK*/
+.HSBC{background: url(../img/bank_logo_32/hsbc.png);} 									/*汇丰银行（中国）-HSBC*/
+.HSCB{background: url(../img/bank_logo_32/hsbk.png);} 									/*衡水市商业银行-hsbk*/
+.HBXH{background: url(../img/bank_logo_32/hurcb.png);} 									/*湖北农信社-HURCB*/
+.HZBANK{background: url(../img/bank_logo_32/hzcb.png);} 									/*杭州银行-HZCB*/
+.JNCCB{background: url(../img/bank_logo_32/jhccb.png);} 									/*金华银行-JHCCB*/
+.JXB{background: url(../img/bank_logo_32/jinchb.png);} 									/*晋城银行-jxb*/
+.JLRCU{background: url(../img/bank_logo_32/jlrcu.png);} 									/*吉林农信社-JLRCU*/
+.JNBANK{background: url(../img/bank_logo_32/jnbank.png);} 								/*济宁银行-JNBANK*/
+.JSBANK{background: url(../img/bank_logo_32/jsbank.png);} 								/*晋商银行-JSBANK*/
+.JPRCU{background: url(../img/bank_logo_32/jsrcu.png);} 									/*江苏省农村信用社联合社-jprcu*/
+.JXCCB{background: url(../img/bank_logo_32/jxbank.png);} 								/*嘉兴银行-jxccb*/
+.JXRCU{background: url(../img/bank_logo_32/jxrcu.png);} 									/*江西农信社-JXRCU*/
+.JYRCB{background: url(../img/bank_logo_32/jyrcb.png);} 									/*江阴农村商业银行-JYRCB*/
+.BOJ{background: url(../img/bank_logo_32/jzbank.png);} 									/*锦州银行-boj*/
+.JZBANK{background: url(../img/bank_logo_32/jzbank.png);} 								/*晋中银行-JZBANK*/
+.KLB{background: url(../img/bank_logo_32/klb.png);} 										/*昆仑银行-KLB*/
+.XJKCCB{background: url(../img/bank_logo_32/korlabank.png);} 							/*库尔勒市商业银行-xjkccb*/
+.JJCCB{background: url(../img/bank_logo_32/jjccb.png);} 									/*九江银行-jjccb*/
+.LJBC{background: url(../img/bank_logo_32/ljbank.png);} 									/*龙江银行-ljbc*/
+.LSBANK{background: url(../img/bank_logo_32/lsbank.png);} 								/*莱商银行-LSBANK*/
+.LSBC{background: url(../img/bank_logo_32/lsbc.png);} 									/*临商银行-LSBC*/
+.LSCCB{background: url(../img/bank_logo_32/lsccb.png);} 									/*乐山市商业银行-LSCCB*/
+.BOL{background: url(../img/bank_logo_32/lzbank.png);} 									/*兰州银行-bol*/
+.LZCB{background: url(../img/bank_logo_32/lzccb.png);} 									/*柳州银行-LZCB*/
+.MTB{background: url(../img/bank_logo_32/master-master.png);} 							/*浙江民泰商业银行-MTB*/
+.NCCB{background: url(../img/bank_logo_32/ncb.png);} 									/*南昌银行-NCCB*/
+.NDHB{background: url(../img/bank_logo_32/ndhb.png);} 									/*宁波东海银行-NDHB*/
+.NJCB{background: url(../img/bank_logo_32/njcb.png);} 									/*南京银行-NJCB*/
+.YCCCB{background: url(../img/bank_logo_32/nxbank.png);} 								/*银川市商业银行-ycccb*/
+.NXRCU{background: url(../img/bank_logo_32/nxrcu.png);} 									/*宁夏黄河农商行-NXRCU*/
+.NYBANK{background: url(../img/bank_logo_32/nybank.png);} 								/*广东南粤银行-NYBANK*/
+.NYCB{background: url(../img/bank_logo_32/nycb.png);} 									/*南阳村镇银行-NYCB*/
+.ORDOSBANK{background: url(../img/bank_logo_32/ordosb.png);} 							/*鄂尔多斯银行-ordosbank*/
+.PZHCCB{background: url(../img/bank_logo_32/pzhccb.png);} 								/*攀枝花市商业银行-PZHCCB*/
+.QBCCB{background: url(../img/bank_logo_32/qdccb.png);} 									/*青岛银行-QBCCB*/
+.BOQ{background: url(../img/bank_logo_32/qhbank.png);} 									/*青海银行-boq*/
+.QLBC{background: url(../img/bank_logo_32/qlbank.png);} 									/*齐鲁银行-QLBC*/
+.RBOZ{background: url(../img/bank_logo_32/rboz.png);} 									/*珠海华润银行-RBOZ*/
+.RXCB{background: url(../img/bank_logo_32/rxcb.png);} 									/*榆次融信村镇银行-RXCB*/
+.RZB{background: url(../img/bank_logo_32/rzb.png);} 										/*日照银行-RZB*/
+.SCB{background: url(../img/bank_logo_32/scb.png);} 										/*渣打银行-SCB*/
+.SMXB{background: url(../img/bank_logo_32/sccb.png);} 									/*三门峡银行-smxb*/
+.SCRCU{background: url(../img/bank_logo_32/scrcu.png);} 									/*四川农信社-SCRCU*/
+.YDRCB{background: url(../img/bank_logo_32/sdrcb.png);} 									/*山西尧都农村商业银行-ydrcb*/
+.SDEB{background: url(../img/bank_logo_32/sdebank.png);} 								/*顺德农村商业银行-SDEB*/
+.SDNXS{background: url(../img/bank_logo_32/sdrcu.png);} 									/*山东农信社-sdnxs*/
+.SJBANK{background: url(../img/bank_logo_32/sjbank.png);} 								/*盛京银行-SJBANK*/
+.SRB{background: url(../img/bank_logo_32/srbank.png);} 									/*上饶银行-SRB*/
+.SRCB{background: url(../img/bank_logo_32/srcb.png);} 									/*上海农商银行-SRCB*/
+.SZRCB{background: url(../img/bank_logo_32/szrcb.png);} 									/*深圳农商行-SRCB*/
+.SXCB{background: url(../img/bank_logo_32/sxcb.png);} 									/*绍兴银行-SXCB*/
+.SXRCCU{background: url(../img/bank_logo_32/sxrccu.png);} 								/*陕西信合-SXRCCU*/
+.SZSBK{background: url(../img/bank_logo_32/szsbk.png);} 									/*石嘴山银行-SZSBK*/
+.TACCB{background: url(../img/bank_logo_32/taccb.png);} 									/*泰安市商业银行-TACCB*/
+.TCRCB{background: url(../img/bank_logo_32/tcrcb.png);} 									/*太仓农商行-TCRCB*/
+.TJBHB{background: url(../img/bank_logo_32/tjbhb.png);} 									/*天津滨海农商行-TJBHB*/
+.ZJTLCB{background: url(../img/bank_logo_32/tlcb.png);} 									/*浙江泰隆商业银行-zjtlcb*/
+.TZB{background: url(../img/bank_logo_32/tzbank.png);} 									/*台州银行-TZB*/
+.UCCB{background: url(../img/bank_logo_32/uccb.png);} 									/*乌鲁木齐商业银行-UCCB*/
+.WFCCB{background: url(../img/bank_logo_32/wfccb.png);} 									/*潍坊银行-WFCCB*/
+.WHCB{background: url(../img/bank_logo_32/whbank.png);} 									/*乌海银行-whcb*/
+.WHCCB{background: url(../img/bank_logo_32/whccb.png);} 									/*威海市商业银行-WHCCB*/
+.WHRCB{background: url(../img/bank_logo_32/whrcb.png);} 									/*武汉农商行-WHRCB*/
+.WJRCB{background: url(../img/bank_logo_32/wjrcb.png);} 									/*吴江农商银行-WJRCB*/
+.WRCB{background: url(../img/bank_logo_32/wrcb.png);} 									/*无锡农村商业银行-WRCB*/
+.WZCB{background: url(../img/bank_logo_32/wzbank.png);} 									/*温州银行-WZCB*/
+.XABANK{background: url(../img/bank_logo_32/xabank.png);} 								/*西安银行-XABANK*/
+.XCCB{background: url(../img/bank_logo_32/xcyh.png);} 									/*许昌银行-XCCB*/
+.XLBANK{background: url(../img/bank_logo_32/xlbank.png);} 								/*小榄银行-XLBANK*/
+.XMCCB{background: url(../img/bank_logo_32/xmbank.png);} 								/*厦门银行-xmccb*/
+.XTB{background: url(../img/bank_logo_32/xtb.png);} 										/*邢台银行-XTB*/
+.XXBANK{background: url(../img/bank_logo_32/xxbank.png);} 								/*新乡银行-XXBANK*/
+.XINYANGCB{background: url(../img/bank_logo_32/xinyangcb.png);} 							/*信阳银行-xinyangcb*/
+.YBCCB{background: url(../img/bank_logo_32/ybccb.png);} 									/*宜宾市商业银行-YBCCB*/
+.YNRCC{background: url(../img/bank_logo_32/ynrcc.png);} 									/*云南农信社-YNRCC*/
+.YQCCB{background: url(../img/bank_logo_32/yqccb.png);} 									/*阳泉市商业银行-YQCCB*/
+.YXCCB{background: url(../img/bank_logo_32/yxccb.png);} 									/*玉溪市商业银行-YXCCB*/
+.ZGB{background: url(../img/bank_logo_32/zgccb.png);} 									/*自贡市商业银行-ZGB*/
+.ZJKCCB{background: url(../img/bank_logo_32/zjkccb.png);} 								/*张家口市商业银行-ZJKCCB*/
+.ZJNX{background: url(../img/bank_logo_32/zjnx.png);} 									/*浙江农信社-ZJNX*/
+.ZRCBANK{background: url(../img/bank_logo_32/zrcbank.png);} 								/*张家港农商行-ZRCBANK*/
+.ZYCCB{background: url(../img/bank_logo_32/zycbank.png);} 								/*遵义市商业银行-zyccb*/
+.ZZB{background: url(../img/bank_logo_32/zzbank.png);} 									/*郑州银行-ZZB*/
+.BAIDU{background: url(../img/bank_logo_32/baidu.png);} 									/*百度*/
+.LLPAY{background: url(../img/bank_logo_32/llzf.png);} 									/*连连支付*/
+.1QIANBAO{background: url(../img/bank_logo_32/1qianbao.png);} 									/*平安付*/
+.GC_UNION {background: url(../img/bank_logo_32/gc_union.png);}
+
+/* 2015-11-26 */
+.DZCCB {background-image:url(../img/bank_logo_32/dzccb.png);}
+.GHB {background-image:url(../img/bank_logo_32/ghb.png);}
+.GSB {background-image:url(../img/bank_logo_32/gsb.png);} /* 甘肃银行 */
+.GZRCU {background-image:url(../img/bank_logo_32/gzrcu.png);}
+.JNBANK {background-image:url(../img/bank_logo_32/jnbank.png);}
+.LAISB {background-image:url(../img/bank_logo_32/laisb.png);}
+.SZSB {background-image:url(../img/bank_logo_32/szsb.png);}
+.XHRCB {background-image:url(../img/bank_logo_32/xhrcb.png);}
+
+/* 2016-07-27 */
+.CACCB {background-image:url(../img/bank_logo_32/caccb.png);} /* 沧州银行 */
+.HKCB {background-image:url(../img/bank_logo_32/hkcb.png);} /* 海口农商银行 */
+.HZB {background-image:url(../img/bank_logo_32/hzb.png);} /* 湖州银行 */
+.HRXB {background-image:url(../img/bank_logo_32/hrxb.png);} /* 华融湘江银行 */
+.JLB {background-image:url(../img/bank_logo_32/jlb.png);} /* 吉林银行 */
+.LYCB {background-image:url(../img/bank_logo_32/lycb.png);} /* 辽阳银行 */
+.NCCB {background-image:url(../img/bank_logo_32/nccb.png);} /* 南阳商行 */
+.NXBANK {background: url(../img/bank_logo_32/nxbank.png);} 	/*宁夏银行*/
+.QHDCB {background: url(../img/bank_logo_32/qhdcb.png);} 	/*秦皇岛银行*/
+.QZCCB {background: url(../img/bank_logo_32/qzccb.png);} 	/*泉州银行*/
+.TCCB {background: url(../img/bank_logo_32/tccb.png);} 	/*天津银行*/
+.ZSCB {background: url(../img/bank_logo_32/zscb.png);} 	/*浙商银行*/
+
+
+
+
+
+
+/*20150414*/
+.cash-assure{text-align: center;padding-top: 44px;padding-bottom: 35px;}
+.cash-assure-inner{position: relative;padding-left: 80px;display: inline-block;*display: inline;*zoom: 1;}
+.cash-assure .icon{position: absolute;left: 0px;top: -6px;width: 64px;height: 64px;background: url(../img/cash-icon.png) 0 0 no-repeat;}
+.cash-assure p{text-align: left;}
+.cash-assure .cash-title{color: #333;font-size: 18px;}
+.cash-assure .cash-tips{margin-top: 11px;color: #666;font-size: 14px;}
+.cash-assure .line{padding: 0 23px 0 26px;}
+
+/* 20150430 */
+.promotion_list { border:1px solid #F0F0F0; margin-top: 40px;}
+.promotion_list h3 { height: 44px; line-height:44px; background-color: #FBFEFF; padding-left: 30px; font-size: 14px; font-weight: normal; border-bottom: 1px solid #F0F0F0;}
+.promotion_list h3 i { display: inline-block; width: 24px; height: 22px; background: url(../img/list_style_01.png) left top no-repeat; overflow: hidden; float: left; margin: 10px 10px 0 0;}
+.promotion_list ul { padding-bottom: 16px;}
+.promotion_list li {float: left; width: 49.99%; padding-top: 16px;}
+.promotion_list li i { display: inline-block; width: 4px; overflow: hidden; height: 3px; background: url(../img/list_style_01.png) -16px -28px no-repeat; vertical-align: middle; margin-right: 5px; margin-left: 30px;}
+.promotion_list li a { color: #587CAC;}
+.promotion_list li a:hover { color: #0088CC;}
+.promotion_list li a:hover i { background-position: -4px -28px;}
+
+/* 2015-12-25 */
+.promotion_list_2 ol { padding: 0 25px 20px 30px; color: #587CAC; font-size: 12px;}
+.promotion_list_2 li { float: none; width: 100%;}
+
+/* 2015-05-15 */
+.popup .ti { color: #579AFE; font-weight:bold;}
+.card_tab { float: left; _display: inline; margin: -48px 0 0 190px; width: 330px; line-height: 48px; font-size: 14px;}
+.card_tab_new { margin-left: 130px;}
+.card_tab h4 { float: left; color: #4c4c4c; font-weight: normal;}
+.card_tab p { overflow: hidden; line-height: 0; font-size: 0; padding-top: 17px; position: relative; _zoom:1; float: left; margin-left: -10px;}
+.card_tab a { font-size: 14px; margin-left: -1px; border-left: 1px solid #0088cc; color: #0088cc; font-weight: bold; line-height: 14px;padding: 0 15px;}
+.card_tab_s {position: absolute; left: 0px; top: 48px; z-index: 5;width:932px;font-size: 12px; color: #ccc; height:60px;}
+.card_tab_s p { padding: 20px 0 20px 15px; background-color: #FFF; height: 18px; line-height: 18px; }
+.card_tab_s a { font-size: 16px; color: #999; vertical-align: middle; padding: 0 5px; display: inline-block; width: 90px; text-align: center;}
+.card_tab_s a.curr { color: #333; font-weight: bold;}
+.popup.pb .alone.card_tab_area01 { margin-top: 0px; padding-top: 72px; }
+.popup.pb .alone.card_tab_area01 ul {_padding-left: 25px; }
+.input_txt_new { padding-top: 30px; height: 98px; width: 310px;}
+.input_txt .tips_new { margin:8px 0 0 40px;}
+.tips_new::before {border: 4px solid transparent; border-right-color: transparent; border-bottom-color: #f0ddb7;left: 10px;top:-5px;}
+.tips_new::after {border: 4px solid transparent; border-right-color: transparent; border-bottom-color: #fffcdb;left: 10px;top:-4px;}
+.card_tab_s2 { position:relative;}
+.card_tab_s2 p { position: absolute; left: 345px; top: -92px; font-size: 12px;color: #0088cc;}
+.card_tab_s2 p a { color: #0088cc;font-weight: bold;}
+.input_txt span { font-size: 12px;}
+.popup .bank-favorable_s1 { background-color: #FFF; padding: 0; border-bottom: 1px dashed #e1e1e1; width: 696px;}
+.popup .bank-favorable_s1  .card-box,.bank-favorable_s1  .card-box { margin-right:10px; width: 180px; }
+.input_txt_s1 { display: block; margin:0 0 50px 0; margin-left: 0; height: 30px;}
+.input_txt_s1 b { font-size: 14px; padding-right: 10px; vertical-align: middle; font-weight: normal; color: #333;}
+.popup .btn_sub_s1 { margin-left: 65px;}
+
+/* 2015-06-03 */
+.bank_list_ti { margin-top: 25px;}
+
+/* 2015-06-18 */
+.popup.wait .pop_infos em.loading_txt { width: auto; padding-top: 4px;}
+.dec_line { position: absolute; bottom: 0px; left: 0px; height: 5px; overflow: hidden; background-color: #D9D9D9; width: 416px;}
+.dec_line span { height: 5px; width: 160px; background-color: #0CAEFF; display: block;}
+
+.failed_ico {display: inline-block;width: 32px; height: 32px;background: url(../img/wrong_b.png);vertical-align: middle;margin: -4px 10px 0 0;}
+.failed_tip { margin-top: -10px; border: 1px solid #e3e3e3; border-top:none; min-height: 290px; height: auto!important; height: 290px; padding-top: 80px; _position: relative;}
+.failed_tip_con { text-align: center; font-size: 24px; line-height: 60px;}
+.failed_tip .order_step { margin:0 0 0 300px;}
+
+/* 2015-06-30 */
+.cui_hd_cont { width: 980px; margin: 0 auto;}
+.cui_hd{height:59px;margin:0 auto;padding:0 10px;border-bottom:2px solid #5E9FFB;background-color:#FFF;}
+.ctriplogo{float:left;width:126px;padding:8px 0;overflow:hidden;}
+.ctriplogo a{display:block;width:126px;height:43px;text-indent:-999px;overflow:hidden;background:url(../img/c_logo2013.png) 0 0 no-repeat;}
+.hhlogo{float:left;width:90px;height:43px;margin:8px 0;padding-left:10px;text-indent:-999px;overflow:hidden;border-left:1px solid #B4B4B4;background:url(../img/hh_logo.png) no-repeat 10px 100%;}
+.cui_toolkit{float:right;width:422px;margin-top:5px;padding-top:20px;text-align:right;color:#BBB;}
+.cui_kefu{color:#4C4C4C;margin-left:8px;}
+.cui_username{color:#4C4C4C;margin-right:8px;}
+.payft{margin:50px 0 20px;padding-top:10px;text-align:center;border-top:1px dashed #9ECCF5;}
+
+/* 2015-07-17 */
+.cardinfo_list li .ti .cash_balance {text-indent:10px; line-height: 34px; font-size: 16px; font-weight: bold;}
+.card_num .price_aera {color: #ff6600;}
+.card_num .price_aera dfn {margin: 0 3px 0 4px;}
+.card_num .price_aera .num_b {font-size: 24px;}
+.card_num .price_aera .num_s {font-size: 18px;}
+.sales_promotion01 { border: 1px solid #F0F0F0; background-color: #F9FDFF; padding: 10px 24px 10px 30px; line-height: 26px; margin-top: 40px;}
+.sales_promotion01 p { height: 130px; overflow: hidden; color: #587CAC; font-size: 12px;}
+
+/* 2015-12-25 */
+.tab_title_n25 { border:1px solid #e1e1e1; border-bottom: none; height: 50px; position: relative; z-index: 5;}
+.tab_title_n25 li {display: inline-block; width: 108px; border-left: 1px solid #e1e1e1;position: relative; margin-left: -1px; text-align: center; font-size: 16px; border-bottom: 2px solid #bedded; line-height: 50px; float: left; background-color:#f8f8f8;}
+.tab_title_n25 li .sales{position:absolute;background:#fe9d10;font-size:12px;color:#fff;padding:2px 4px;right:10px;top:-12px; height: 16px; line-height: 16px;}
+.tab_title_n25 li .sales:after{content:"";position:absolute;line-height:0;width:0;height:0;font-size:0;border:3px solid transparent;border-top-color:#fe9d10;left:4px;bottom:-6px;}
+.tab_title_n25 li.act,.tab_title_n25 li:hover { border:2px solid #bedded; z-index: 6; margin-top: -2px; width: 112px; margin-right: -1px; border-bottom-color:#FFF; background-color: #FFF;}
+
+/* 2016-01-19 */
+.pop_tip_cc1 { width: 410px; line-height: 20px; color:#888 ; background-color:#f7f7f7 ; margin:10px 20px; padding: 5px 8px; font-size: 12px; border:1px dashed #DDD;}
+
+/* 2016-02-17 */
+.input_tips_n1 { font-size: 12px; color: #999; line-height: 30px;}
+.input_tips_n1 span {color: #f57403; padding: 0 4px;}
+.input_tips_n1 dfn { font-family: Arial;}
+.price_new_n1 {margin-top: -10px;color: #424242;}
+.price_new_n1 em { color: #999; font-weight: normal; font-size: 12px; vertical-align: 2px;}
+
+/* 2016-03-31 */
+.w_from_n1 { padding: 70px 0;}
+
+.w_from_team { padding-left: 155px; position: relative; _zoom:1;}
+.w_from_team .w_from_tit { position: absolute; left: 0px; top: 0px; width: 150px; text-align: right; height: 36px; line-height: 36px;}
+.w_from_team .w_from_ipt { width: 318px; height: 34px; line-height: 34px; font-size: 20px; color: #333;}
+.w_from_team .hint,.popup_pm_n1 .hint { color: #999; height: 14px; line-height: 14px; margin-top: 10px; font-size: 12px;}
+.w_from_team .hint .hint_c01,.popup_pm_n1 .hint .hint_c01 { color: #f57403; padding: 0 2px;}
+.w_from_team .hint a,.popup_pm_n1 .hint a { border-left: 1px solid #EDEDED; margin-left: 8px; padding-left: 8px;}
+.w_from_team input { vertical-align: top;}
+.w_from_con .tips { margin-left: 4px;}
+
+.w_marketing_area { margin: 0 20px; border-bottom: 1px dotted #E2EBFF;}
+.w_marketing_area ul{ margin-left: -20px; font-size: 0px; line-height: 0px;}
+.w_marketing_area li { display: inline-block; width: 126px; padding:0 0 10px 62px; vertical-align: top; font-size: 12px; line-height: 16px; *float: left; position: relative; _zoom:1;}
+.w_marketing_area li .bank-logo { position: absolute; left: 20px; top: 0px;}
+.w_marketing_area li .bank-name { font-weight: normal; font-size: 12px; color: #1E2938;}
+.w_marketing_area li .favorable-info { color: #F57403;}
+
+.popup_pm_n1 { width: 758px;}
+.popup_pm_n1 .bank_list { margin: 0;}
+.popup_pm_n1 .bank-favorable_s1 { width: 100%; padding: 5px 0 0 0; background-color: #F7FAFF; border-bottom: none;}
+.popup_pm_n1 .bank-favorable_s1 .card-box { margin: 0 0 18px 20px; padding-top: 5px;}
+.popup_pm_n1 .input_txt_s1 { padding:10px 0 40px 40px; font-size: 14px; margin-bottom: 0;}
+.popup_pm_n1 .input_txt input { width: 318px; height: 34px; line-height: 34px;}
+.popup_pm_n1 .btn_sub { margin: 25px 0 14px 135px;}
+
+.c_layer_banklist { padding-top: 30px; height: 450px; overflow-x: hidden; overflow-y: scroll;margin-right: 5px; position: relative;}
+.c_layer_banklist::-webkit-scrollbar {width:8px;}
+.c_layer_banklist::-webkit-scrollbar-button {background-color:#FFF;}
+.c_layer_banklist::-webkit-scrollbar-track {background:#FFF;}
+.c_layer_banklist::-webkit-scrollbar-thumb {background:#ccc;border-radius:50px;}
+.c_layer_banklist dl { padding-left:20px; position: relative; _zoom:1;}
+.c_layer_banklist dd { margin-bottom: 15px; font-size: 0px; line-height: 0px;}
+.c_layer_banklist dl dt { position: absolute; left:0; padding-left: 4px; width:16px; height: 20px; background-color: #A2C7FF; color: #FFF; top: 0px; border-radius: 0 5px 5px 0; font:normal 14px/20px Arial;}
+.c_layer_banklist dd i {display:inline-block;width:158px;height: 33px;background-color: #fff; margin-bottom:20px; margin-left: 15px; border: 1px solid #DDE1E6; position: relative; vertical-align: top;}
+.w_banklist_n1_tit { height: 40px; border-bottom: 1px solid #D9E8FF; margin-right: 38px; padding: 15px 0 0 19px; font-size: 0px; line-height: 0px;}
+.w_banklist_n1_tit p { border-radius: 5px; border:1px solid #82B4FF; display: inline-block;}
+.w_banklist_n1_tit a { display: inline-block; height: 24px; line-height: 24px; padding:0 30px;}
+.w_banklist_n1_tit a.curr { background-color: #82B4FF; color: #FFF;}
+.w_banklist_n1_con .w_marketing {position: absolute; left:-1px; top: -17px; background-color: #FFEEEE; color: #FF7700; height: 16px; line-height: 16px; font-size: 12px; padding: 0 5px; overflow: hidden; max-width: 149px;}
+.cardinfo_list li .w_hint_n1 {top:15px; font-size: 12px; width: 235px; left: 28px;}
+.cardinfo_list li .w_hint_n1 strong { display: block; text-align: center; font-size: 16px; padding-bottom: 10px; line-height: 20px}
+.cardinfo_list li .w_hint_n1 p { height: 64px; overflow: hidden; line-height: 20px;}
+
+/* 2016-04-05 */
+.ng-cloak {display: none;}
+.mask{width:100%;height:100%;position:fixed;left:0;top:0;background:rgba(0,0,0,0.2);background:url(../img/mask02.png)\9;z-index:99;}
+
+/* 2016-04-06 */
+.cardinfo_list li.w_addnewcard { background: none; border:none;}
+.cardinfo_list li.w_addnewcard .newcard { margin: 0;}
+.w_from_team .w_from_con { position: relative;}
+.w_from_team .w_from_con .w_logoimg_n1 { position: absolute; left: 330px; top: 2px; width: 32px; height: 32px;}
+.w_from_team .w_from_con .w_loading_n1 { position: absolute; left: 295px; top: 6px; width: 24px; height: 24px; background:url(../img/loading_c2.gif) left top no-repeat;}
+
+/* 2016-04-07 */
+.pop_banklist_n1 .w_from_team { padding:10px 0 10px 135px; margin-top: 30px;}
+.pop_banklist_n1 .w_from_team .w_from_tit { width: 130px; top: 10px;}
+
+/* 2016-04-11 */
+.tab_aera { border:1px solid #B1D0FF; box-shadow: 0px 0px 4px #B0D0FF; margin-top:-1px; }
+.tab_nav_nt1 { margin-top:-80px; *margin-top: -81px; position: relative;}
+.tab_nav_nt1 ul { width: 956px; padding: 12px 12px 0 12px; overflow: hidden;}
+.tab_nav_nt1 ul li { font-size: 14px; height: 47px; line-height: 47px; width: 78px; text-align: center; border: 1px solid #dce7ff;  color: #666; float: left; margin-left: -1px; background-color: #F9FBFF; cursor: pointer; border-bottom-color: #B1D0FF;}
+.tab_nav_nt1 ul li.tabnav_special { width: 138px; font-size: 16px; color: #333;}
+.tab_nav_nt1 ul li i { display: inline-block; width: 23px; height: 16px; line-height: 0px; font-size: 0px; overflow: hidden; vertical-align: middle; background: url(../img/tab_icon.png) left top no-repeat; margin: -4px 5px 0 0;}
+.tab_nav_nt1 ul li i.tab_icon_WechatScanCode { background-position: left -21px;}
+.tab_nav_nt1 ul li i.tab_icon_CreditCard { background-position: left -41px;}
+.tab_nav_nt1 ul li i.tab_icon_DepositCard { background-position: left -61px;}
+.tab_nav_nt1 ul li.curr { border-color: #B1D0FF; border-bottom-color:#FFF; z-index: 10; box-shadow: 0px 0px 4px #B0D0FF; background-color: #FFF; color: #579AFE; position: relative;}
+.tab_nav_nt1 ul li.curr i { background-position: -27px top;}
+.tab_nav_nt1 ul li.curr i.tab_icon_WechatScanCode { background-position: -27px -21px;}
+.tab_nav_nt1 ul li.curr i.tab_icon_CreditCard { background-position: -27px -41px;}
+.tab_nav_nt1 ul li.curr i.tab_icon_DepositCard { background-position: -27px -61px;}
+.mark { position:relative; padding: 2px 4px; line-height: 13px; border-radius: 3px; background-color: #F57403; font-size: 12px; color: #FFF; z-index: 11; white-space:nowrap; word-break:break-all; text-align: left; float: left; margin: -58px 0 0 60px;}
+.mark b { background: url(../img/tab_icon.png) left -83px no-repeat; width: 6px; height: 4px; position: absolute; left: 6px; bottom: -4px;}
+
+/* debug */
+.popup .bank-favorable-n1 {padding: 15px 0 15px 18px}
+.popup .bank-favorable-n1 .card-box { margin: 0 35px 0 0;}
+
+/* 2016-05-12 */
+.cardinfo_list li.w_addnewcard_n1 .newcard{border:2px solid #CFE2FF; border-radius: 6px; text-align: center;}
+.cardinfo_list li.w_addnewcard_n1 .icon_plus { display: inline-block; width: 52px; height: 52px; background: url(../img/plus_icon.png) left top no-repeat; vertical-align: middle; margin: 40px 5px 0 0;}
+.cardinfo_list li.w_addnewcard_n1 .newcard em { display: inline-block; vertical-align: middle; height: 40px; line-height: 20px; padding: 5px 0; margin-top: 40px; color: #99C2FF; font-size: 12px; text-align: left;}
+.cardinfo_list li.w_addnewcard_n1 .newcard em strong { font-size: 18px; color: #82B4FF; font-weight: normal;}
+.cardinfo_list li.w_addnewcard_n1 .icon_plus i { line-height: 0px; font-size: 0px; height: 0px; width: 0px;}
+:-ms-input-placeholder {color: #ccc; font-size: 14px; font-family: "Microsoft YaHei"}
+::-webkit-input-placeholder {color: #ccc; font-size: 14px; font-family: "Microsoft YaHei"}
+::-moz-placeholder {color: #ccc; font-size: 14px; font-family: "Microsoft YaHei"}
+
+/* 2016-05-13 */
+.w_banklist_tit_s1 {height: 32px; line-height: 32px; color: #999; padding-bottom: 20px; }
+.w_banklist_tit_s1 h3 { display: inline-block; border-radius: 0 5px 5px 0; background-color: #A2C7FF; color: #FFF; padding: 0 20px; font-size: 16px; float: left; margin-right: 10px; font-weight: normal;}
+.w_banklist_tit_s1 span strong { color: #F57403; font-weight: normal;}
+.w_banklist_tit_s1 span i { font-family: Arial;}
+.c_layer_banklist dl dt.w_banklist_none_num { background:none; line-height: 0px; font-size: 0; width: 0px; height: 0px;}
+
+.tab_aera .more_rw1,.more_rw1 { display: block; margin-top: 20px;}
+
+.w_cardinfo_list_n1 { display: inline-block; float: left; margin-right: -27px; vertical-align: top; line-height: 0px; padding-left: 25px; }
+.w_cardinfo_list_n1 li {margin-left: 0px; margin-right: 25px; }
+
+.tab_aera .newcard_nc1 {border: 2px solid #CFE2FF;border-radius: 6px;text-align:left;width: 266px;height: 116px; display: inline-block; margin: 20px 0 0 25px; font-size: 0px; line-height: 0px; cursor: pointer; padding-left: 20px;}
+.tab_aera .newcard_nc1 .icon_plus{display: inline-block;width: 52px;height: 52px;background: url(../img/plus_icon.png) left top no-repeat;vertical-align: middle;margin: 32px 5px 0 0;}
+.tab_aera .newcard_nc1 em {display: inline-block;vertical-align: middle;height: 40px;line-height: 20px;padding: 5px 0;margin-top: 32px;color: #99C2FF;font-size: 12px;text-align: left;}
+.tab_aera .newcard_nc1 em strong {font-size: 18px;color: #82B4FF;font-weight: normal;}
+.tab_aera .more_nc1 {clear: both; display: block; margin-top: 0px; height:40px; line-height: 55px;}
+
+/* 2016-05-31 */
+.order_infos_n1 { margin-bottom: 80px;}
+
+/* 2016-06-17 */
+.inner_n1{border:1px solid #B1D0FF; box-shadow:0px 0px 6px #B1D0FF; padding-bottom: 45px;}
+.code2_con { text-align: center;}
+.price_con02 { display: inline-block; padding: 0px 30px; border:1px solid #E2EBFF; background-color: #F5F8FF;font-size: 14px; height: 48px; line-height: 48px; border-top: none;}
+.price_n2 { color: #F57403; padding-left: 5px; font-size: 18px; font-weight: bold; font-family: Arial;}
+.price_n2 dfn { font-size: 12px; font-weight: normal;}
+.code2_txt { margin-top: 18px; height: 60px; line-height: 60px; font-size: 16px; font-weight: bold; text-align: center; }
+.code2_img img { border:2px solid #B1D0FF; padding: 8px; box-shadow: 0 0 5px #C8DEFF;}
+
+/* 2016-06-24 */
+.bank_items li .w_hint_n1 {line-height: 48px;padding-left: 5px;font-size: 0; top: 0px; text-align: left; height: 48px; left: 0px; width: 194px; overflow: hidden; background: none; display: none; color: #fff; z-index: 10;}
+.bank_items li .w_hint_n1 span.vm { display: inline-block;line-height: 1.4em;vertical-align: middle; font-size: 12px;}
+.bank_items li .w_hint_n1 span.dib {display: inline-block;vertical-align: middle; background-color: red;}
+.bank_items_n1 { overflow: hidden;}
+.bank_items li:hover .mask {background: rgba(0,0,0,0.6);}
+.bank_items li:hover .w_hint_n1 { display: block;}
+
+/* 2016-06-24 */
+.bank_list_c01 ul {max-height: 300px;*height: 300px; overflow-y: scroll; overflow-x: hidden;}
+
+/* 2016-07-07 */
+.bank_list.bank_list_mt,.bank_list_mt { margin-top: 15px;}
+.corporate_bank {position: absolute; right: 8px; top: 15px;}
+
+/* 2016-09-01 */
+.used_new { line-height: 16px; font-size: 12px; width: 108px; text-align:right; padding:8px 30px 7px 0; vertical-align: middle; font-family: "Microsoft YaHei"; }
+.used_new em { display: block; color: #ff6600; font-size: 18px; *padding-bottom: 6px;}
+.popup .ti span.ti_tip { font-size: 12px; font-weight: normal; padding-left: 8px;}
+
+.pop_form_list_n1 li { margin: 0 20px 0 40px; border-bottom: 1px solid #EEE; padding: 20px 0 24px 195px; position: relative; _zoom:1;}
+.pop_form_list_n1 li .lbs { position: absolute; left: 0px; top: 17px; font-size: 14px;  }
+.pop_form_list_n1 li .balance { position: absolute; left: 0px; top: 40px; font-family: "Microsoft YaHei"; font-size: 12px; color: #999;}
+.pop_form_list_n1 li .tip_price { position: absolute; bottom: 7px; left: 197px; font-size: 12px; color: #999; font-family: "Microsoft YaHei";}
+.pop_form_list_n1 li .tip_price i { color: #ff6600; padding: 0 2px;}
+.pop_form_list_n1 li input,.pop_form_list_w2 li input { width: 158px; height: 30px; border:1px solid #CCC; outline:none; font-size: 18px; margin-right: 15px;}
+.pop_form_list_n1 li input:focus,.pay_password input:focus,.pop_form_list_w2 li input:focus { box-shadow: 0px 0px 4px #B1D0FF; border:1px solid #B1D0FF;}
+
+.price_pop_n1 {text-align: right; margin:0 20px 0 160px; position: relative; z-index: 10; font-family: "Microsoft YaHei";}
+.price_pop_n1 .price_info { border-bottom: 1px dashed #EEE; line-height: 20px; padding: 5px 79px 5px 0; font-size: 12px; color: #999;}
+.price_pop_n1 .price_info li { position: relative;}
+.price_pop_n1 .price_info span { display: inline-block; vertical-align: middle; width: 50px;}
+.price_pop_n1 .price_info .info_tit { width: 120px; padding-right: 45px;}
+.price_pop_n1 .price_info i.icon_w1 { position: absolute; width: 14px; height: 14px; background:url(../img/icon_w1.png) left top no-repeat; right:-20px; top: 4px; cursor: pointer;}
+.price_pop_n1 .price_txt { height: 34px; line-height: 34px; font-size: 14px; color: #999; padding-right: 79px;}
+
+.service_charge_pop { position: absolute; width: 300px; left: -53px; top: -125px; background-color: #FFF; border-radius: 5px; box-shadow: 0px 0px 10px #999; text-align:left;}
+.service_charge_pop h3 { height: 40px; line-height: 40px; text-align: center; color:#579AFE; font-size: 16px; font-weight: bold; border-bottom: 1px solid #82B4FF;}
+.service_charge_pop .charge_tip {margin: 0 10px;font-family: "Microsoft YaHei"; overflow: hidden; }
+.service_charge_pop .charge_tip dt { padding-top: 10px;}
+.service_charge_pop .charge_tip dd { border-bottom: 1px solid #CDE1FF; padding: 5px 0 10px 0; font-size: 12px;  color: #737373; margin-left: -16px;}
+.service_charge_pop .charge_tip dd span { display: inline-block; vertical-align: middle; text-align: center; padding-left: 12px;}
+.service_charge_pop .charge_tip dd span.symbol { font-size: 16px; font-weight: bold;}
+.info_area_n1 { padding: 10px; color: #999; line-height: 16px; font-size: 12px;}
+.info_area_n1 dt { color:#333; }
+.pay_password { padding: 25px 0 35px 45px; background-color: #F4F9FF; position: relative; _zoom:1;}
+.pay_password input { width: 158px; height: 34px; border:1px solid #CCC; margin: 0 10px 0 18px; outline: none;}
+/*.pay_password .tips2{
+	line-height: 1.4;
+    border-radius: 1px;
+    font-size: 12px;
+    color: #666;
+    padding: 2px 0px 3px 0;
+    width: 228px;
+    white-space: nowrap;
+    position: absolute;
+    left: 118px;
+    top: 60px;
+	word-break:break-all;}
+	
+.pop_form_list_n1 .tips2 { left: 195px; top: 50px;}
+
+.pay_password .tips2 .icon{display:inline-block;width:16px;height:16px;background:url(../img/tips2.png);vertical-align:top;margin:0 5px 0 7px;position:relative;}
+.pay_password .tips2 em{color:red;display:inline-block;}
+
+.pay_password .tips2::before,.pop_form_list_n1 .tips2::before {content:"";position:absolute;width:0;height:0;font-size:0;border:4px solid transparent;border-bottom-color:#f0ddb7;left:11px;top:-9px;}
+.pay_password .tips2::after,.pop_form_list_n1 .tips2::after {content:"";position:absolute;width:0;height:0;font-size:0;border:4px solid transparent;border-bottom-color:#fffcdb;left:11px;top:-8px;}
+*/
+.btns_n1 { background-color: #F4F9FF; margin-top: 0px; padding:0 0 25px 89px; margin-bottom: -30px; border-radius: 0 0 5px 5px;box-shadow: 0px 2px 4px #676666}
+.btns_n1 .btn_sub { width: 90px; height: 35px; line-height: 35px; text-align: center; font-size: 12px;}
+.positione_a1 { width: 420px; height: 85px; position: absolute; left: 40px; bottom: -105px; background-color: #FFF; border-radius: 0 0 5px 5px; box-shadow: 0px 0px 10px #333; z-index: -1;}
+.pay_password input.txt_input_w1,.pop_form_list_n1 li input.txt_input_w1 { border-color:#f47f77; background-color:#fff5f6; }
+.pop_price_w2 {font-family: "Microsoft YaHei"; font-size: 12px; line-height:20px; }
+.pop_price_w2 .price_c1 { color: #ff6600; font-size:14px; }
+
+.popup .pop_form_list_w2 { text-align: left; margin: 0}
+.popup .pop_form_list_w2 li { padding-left: 75px; position: relative; _zoom:1;}
+.popup .pop_form_list_w2 li .lbs { width: 75px; position: absolute; left: 0px; top: 0px; margin-left: 0; text-align: right;}
+.popup .pop_form_list_w2 li input { margin-right: 0px; height: 34px; line-height: 34px;}
+.popup .pop_form_list_w2 .btn_verify {position: absolute; left: 230px; top: 3px; height:36px; border: none; line-height: 36px; background-color: #78B0F9; color: #FFF; font-size: 12px;}
+.popup .pop_form_list_w2 .tips2 { left: 75px; position: absolute; top: 36px;}
+.popup .btns_lists1 { text-align: left; padding-left: 95px;}
+
+.phone_area { border-top:1px solid #CDE1FF; margin:40px 10px 0 10px; padding:0 10px; color: #999; font-size: 12px; line-height: 20px;}
+.phone_area dt { padding-top: 10px;}
+.phone_area dd { float: left; width: 50%;}
+
+/* 2016-09-05 */
+.balance_price { padding: 0 14px 0px 30px;}
+.giftcard_lqa { border-left: 1px solid #999; padding-left: 14px;}
+.price_pop_n1 .price_txt span { display: inline-block; width: 147px; float: left;}
+
+
+
+/*2016.9.21*/
+/*出错文案颜色*/
+.pop_form_list_n1 .tips2,.pay_password .tips2{
+line-height:1.4;
+border-radius:1px;font-size:12px;
+color:#666;
+padding-left:22px;
+width:220px;
+ position: absolute; 
+left: 195px;
+word-break:break-all;
+top: 55px;
+background:url(../img/tips2.png) no-repeat 1px top;}
+
+.pay_password .tips2{left: 119px; top: 62px;width:215px;}
+
+.pop_form_list_n1 .tips2 em,.pay_password .tips2 em{color:red;display:inline-block;vertical-align:top; }
+
+.pop_form_list_n1 .tips2 .icon,.pay_password .tips2 .icon{display:inline-block;width:16px;height:16px;vertical-align:middle;margin:0 5px 0 7px;position:relative;}
+
+.font12{ font-size:12px;}
+
+/*温馨提示*/
+.popup.warmtip{ width: 500px; _width:500px; margin: -195px 0 0 -250px;}
+.popup .pop_warmtip_infos{ margin: 30px 23px 0; word-break:break-all; color:#666;}
+.popup .pop_warmtip_infos p{ margin-bottom:13px;text-indent:2em}
+.popup .pop_warmtip_infos p.title{text-indent:inherit;}
+.topbar .warmtip{ position: absolute; font-size: 12px; color: #0088cc; font-family: simsun; right: 80px; top: 32px;}
+.topbar .warmtip_grey{ color:#DEDEDE; position: absolute; right: 68px; top: 30px; height:15px;}
+
+
+/*去哪儿*/
+.qnr_box{ background-color:#F5F8FF; width:600px; padding:50px 0 4px;height:246px; border:1px solid #A0D2DD; margin:150px auto auto;text-align:center;}
+
+.qnr_txt1{
+color:#00A4BF;
+font-size:25px;
+margin-top:13px;
+}
+
+.qnr_txt2{
+color:#3FBBD0;
+font-size:18px;
+margin-top:3px;
+}
+
+.qnr_btn{
+color: #fff;
+background-color:#FF6600;
+line-height: 40px;
+font-size: 18px;
+width: 120px;
+display:block;
+margin:20px auto;
+border-radius:6px;
+}
+
+.qnr_ico_fail,
+.qnr_ico_success,
+.qnr_ico_network,.qnr_ico_loading
+{
+width:110px; 
+height:120px;
+display:block;
+margin:0 auto;
+background:url(../img/qnr_bg.png) no-repeat;
+}
+
+.qnr_ico_network{  background-position:-7px -269px}
+.qnr_ico_success{ margin-top:-27px; background-position:-16px 7px}
+.qnr_ico_fail{width:117px; background-position:-10px -126px}
+
+.qnr_ico_loading{ background:url(../img/qnr_loading.gif) no-repeat 6px 40px;}
+
+
+
+/*实名认证*/
+.c_payment_txt1{ margin:0 auto; width:960px; background-color:#EBF9EB; border:1px solid #AEEAAE; margin-bottom:10px; color:#3BC63B; border-radius:5px;  font-size:14px; height: 26px;line-height: 26px;}
+.c_payment_txt2{ margin-left:128px; color:#58A0FF; font-size:26px; margin-top:30px;}
+.c_payment_txt3{ margin:6px auto 25px 180px; color:#999; font-size:14px;}
+.c_payment_list{ height:90px; width:290px; padding:10px 0 10px 30px; background-color:#F9FCFF; border:1px solid #B6D3FF; border-radius:5px; box-shadow:0px 1px 3px #ECF4FE;margin-left:180px;}
+.c_payment_list li{ padding:0; color:#666; font-size:12px;}
+.c_payment_list li span{ margin-right:13px;}
+.c_from_btn_180 { padding: 37px 0 100px 180px;}
+.c_alink_pl { padding-left: 55px;}
+.c_payment_ico1{background: url(../img/icon_p1.png) no-repeat;width: 24px;height: 21px;background-position: 3px 4px;float: left;}
+.c_payment_ico2{background: url(../img/icon_p1.png) no-repeat;width: 50px;height: 42px;background-position: 0px -19px;float: left;}
+.c_btn01_w200{ width:200px;}
+
+/*弹框*/
+.c_payment_n1 { padding:27px 20px 0; _zoom:1;}
+.c_payment_process { text-align:center;width: 88px; height: 68px; background: url(../img/icon_n4.png) no-repeat; margin:0 auto 10px;}
+.c_payment_error { text-align:center;width: 88px; height: 68px; background: url(../img/icon_n3.png) no-repeat; margin:0 auto 10px;}
+.c_payment_success { text-align:center;width: 88px; height: 68px; background: url(../img/icon_n2.png) no-repeat; margin:0 auto 10px;}
+.c_payment_n1 h4 {text-align:center; font-size: 16px; color: #333; padding-bottom: 15px; }
+.c_pop_btn_box{ width:80px; margin:0 auto 5px;}
+.c_payment_pop_btn{padding:4px 25px; color:#fff; font-size:14px; background-color:#F57403; height:28px; line-height:28px; }
+.c_payment_pop_btn:hover,.c_payment_pop_btn_cancel:hover{text-decoration:none;}
+.c_payment_pop_btn_cancel{padding:4px 25px; font-size:14px; color:#58A0FF; height:28px; line-height:28px;}
+
+.creditcard_ycccb2{background-image:url(../img/bank/creditcard_ycccb2.png);} /*宁夏银行*/
+.ycccb2{background: url(../img/bank_logo_32/ycccb2.png);} 		/*宁夏银行*/
+.btns_n1_p { background-color: #F4F9FF; margin-top: 0px; padding:20px 0 30px 281px; margin-bottom: -30px; border-radius: 0 0 5px 5px;box-shadow: 0px 2px 4px #676666}
+.btns_n1_p .btn_sub { width: 90px; height: 35px; line-height: 35px; text-align: center; font-size: 12px;}

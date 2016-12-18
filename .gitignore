@@ -1,0 +1,4 @@
+/angular/angular/*.exclude
+*.bak
+*.suo
+*.exclude
